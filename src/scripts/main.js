@@ -1,3 +1,10 @@
+import TopSectionTemplate from './TopSectionTemplate.js'
 import RenderBottomSection from "./BottomSectionTemplate.js"
 
-RenderBottomSection()
+
+
+(function start(){
+    TopSectionTemplate();
+    RenderBottomSection()
+})();
+
