@@ -1,3 +1,5 @@
+@import "login.css";
+
 .top-section {
     padding-left: 0px;
     padding-top: 1em;
@@ -85,3 +87,4 @@ ul .dash-list{
 .enter-new-article, .news-feed, .friend-list {
     border: 2px black solid;
 }
+
