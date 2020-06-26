@@ -90,9 +90,21 @@ ul .dash-list{
     flex-wrap: wrap;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
+=======
+
+/* BOTTOM HALF CSS */
+.user-text {
+    text-align: left;
+}
+.user-bottom-selection {
+    background-color:  white;
+}
+
+>>>>>>> master
 .header {
     background-color: white;
 }
@@ -100,6 +112,9 @@ ul .dash-list{
 .friend-list {
     display: flex;
     justify-content: center;
+    margin: 2em 0em;
+    padding: 1em;
+    overflow: auto;
 }
 
 .friend-entry {
@@ -120,13 +135,14 @@ ul .dash-list{
 .gray-button {
     color: cornsilk;
     background-color: rgb(82, 81, 83);
+    margin: 2em 0em;
 }
 
 .gray-button:hover {
     background-color: rgb(57, 57, 58);
 }
 
-.enter-new-article, .news-feed, .friend-list {
-    border: 2px black solid;
-}
+
+
+
 
