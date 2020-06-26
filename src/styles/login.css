@@ -44,3 +44,8 @@
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
+
+#registration__message {
+    text-align: center;
+    margin-bottom: -2vw;
+}
