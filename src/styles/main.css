@@ -90,6 +90,9 @@ ul .dash-list{
     flex-wrap: wrap;
 }
 
+=======
+=======
+
 /* BOTTOM HALF CSS */
 .user-text {
     text-align: left;
@@ -98,9 +101,11 @@ ul .dash-list{
     background-color:  white;
 }
 
+
 .header {
     background-color: white;
 }
+
 .friend-list {
     display: flex;
     justify-content: center;
