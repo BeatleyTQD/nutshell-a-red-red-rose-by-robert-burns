@@ -1,0 +1,29 @@
+.bottom-section {
+    border: 2px black solid;
+    /* height: 800px; */
+}
+
+.friend-list {
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    /* padding: .5em; */
+}
+
+.friend-entry {
+    border: 2px black solid;
+    margin: 0em 2em;    
+}
+
+.bottom-card {
+    border: 2px black solid;
+}
+
+.user-bottom-selection {
+    border: 2px black solid;    
+}
+
+.btn-primary {
+    background-color: #563d7c;
+    border-color: #563d7c;
+}
