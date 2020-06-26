@@ -11,10 +11,10 @@
 }
 .user-section {
     background-color: white;
-    border: royalblue solid 1em;
+    border: purple solid 1em;
 }
 .task-section {
-    background-color: royalblue;
+    background-color: purple;
 }
 .tasks-box {
     margin-top: 1em;
