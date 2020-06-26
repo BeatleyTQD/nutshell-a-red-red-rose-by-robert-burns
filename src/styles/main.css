@@ -1,0 +1,53 @@
+.top-section {
+    padding-left: 0px;
+    padding-top: 1em;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.side-bar-custom {
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+.user-section {
+    background-color: white;
+    border: royalblue solid 1em;
+}
+.task-section {
+    background-color: royalblue;
+}
+.tasks-box {
+    margin-top: 1em;
+    border: solid black 1px;
+    height: 265px;
+    background-color: cornsilk;
+    overflow: scroll;
+}
+.tasks-box::-webkit-scrollbar {
+    display: none;
+  }
+
+.t-card {
+    border: black solid 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-color: white;
+}
+input.checkbox {
+    margin: .5em;
+    height: 50px;
+    width: 50px;
+}
+.profile-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 25%;
+    margin: 1em;
+}
+ul .dash-list{
+    display: inline;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
