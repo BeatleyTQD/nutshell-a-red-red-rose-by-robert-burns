@@ -1,26 +1,55 @@
 @import "login.css";
 
+.form-control {
+    text-align: center;
+}
+
+.login__button {
+    background-color: rgb(85, 55, 143);
+    color: cornsilk;
+    width: 35%;
+    margin-left: 32.5vw;
+    margin-top: 3vw;
+}
+.register__button {
+    background-color:  rgb(82, 81, 83);
+    color:cornsilk;
+    width: 35%;
+    margin-left: 32.5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
 .top-section {
     padding-left: 0px;
-    padding-top: 1em;
     height: 300px;
     flex-wrap: wrap;
+    margin-bottom: 2em;
+    margin-top:1em;
+    box-shadow: 0 0 10px;
+    
+    justify-content: center;
 }
 .side-bar-custom {
     height: 300px;
     border: 1px solid black;
-    border-radius: 10%;
+    box-shadow: 0px 0px 4px;
+    background-color: rgb(85, 55, 143);
+    margin-right: 1em;
 }
 .user-section {
     background-color: white;
-    border: royalblue solid 1em;
+    border:rgb(85, 55, 143) solid 1em;
+    max-height: 300px;
+    justify-content: center;
+    
 }
 .task-section {
-    background-color: royalblue;
+    background-color: rgb(85, 55, 143);
+    max-height: 300px;
 }
 .tasks-box {
     margin-top: 1em;
-    border: solid black 1px;
+    box-shadow: 0 0 10px;
     height: 265px;
     background-color: cornsilk;
     overflow: scroll;
@@ -43,19 +72,31 @@ input.checkbox {
 .profile-img {
     height: 100px;
     width: 100px;
-    border-radius: 25%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
     margin: 1em;
 }
 ul .dash-list{
     display: inline;
 }
-
+.top-box-sizing{
+    box-sizing: unset;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4em;
+}
 .flex-container{
     display: flex;
     flex-wrap: wrap;
 }
+<<<<<<< HEAD
 
 
+=======
+.header {
+    background-color: white;
+}
+>>>>>>> master
 .friend-list {
     display: flex;
     justify-content: center;
