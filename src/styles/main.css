@@ -89,9 +89,6 @@ ul .dash-list{
     display: flex;
     flex-wrap: wrap;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 
 =======
 =======
@@ -104,11 +101,11 @@ ul .dash-list{
     background-color:  white;
 }
 
->>>>>>> master
+
 .header {
     background-color: white;
 }
->>>>>>> master
+
 .friend-list {
     display: flex;
     justify-content: center;
