@@ -17,10 +17,6 @@ let loginEvents = {
         let registerButton = document.querySelector(".register__button")
         registerButton.addEventListener("click", clickEvent => {
             renderRegis()
-            API.addUser(registrationFactory("me@me.com", "lykrin", "123")).then((response) => {
-                console.log(response)
-            })
-            
             
         })
         
