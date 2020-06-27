@@ -98,9 +98,11 @@ ul .dash-list{
     background-color:  white;
 }
 
+
 .header {
     background-color: white;
 }
+
 .friend-list {
     display: flex;
     justify-content: center;

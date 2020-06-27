@@ -11,32 +11,36 @@
 </head>
 
 <body>
-    <img id="logo__img" src="images/NutshellV2.png" alt="Nutshell Logo" width="10%" height="10%">
-    <h1 id="welcome__message">New User Registration</h1>
-    <!-- <h3 id="tagline"></h3> -->
-    <form class="input__group">
-        <div class="form__group">
-            
-            <input type="email" class="form-control" id="email__input" aria-describedby="emailHelp" placeholder="Email">
-            <!-- <small id="emailHelp" class="form-text text-muted">Your email is safe with us!</small> -->
-        </div>
-        <div class="form__group">
-            
-            <input type="username" class="form-control" id="username__input" aria-describedby="emailHelp" placeholder="Username">
-            <!-- <small id="username" class="form-text text-muted">Pick something that best describes you!</small> -->
-        </div>
-        <div class="form__group">
-            
-            <input type="password" class="form-control" id="password__input" placeholder="Password">
-        </div>
-        <div class="form__group">
-            
-            <input type="password" class="form-control" id="password__input" placeholder="Confirm Password">
-        </div>
-    </form>
 
-    <button type="button" class="btn login__button btn-lg"><strong>Register</strong></button>
+    <div id="registration__wrapper">
+        <img id="logo__img" src="images/NutshellV2.png" alt="Nutshell Logo" width="10%" height="10%">
+        <h1 id="registration__message">New User Registration</h1>
+        <!-- <h3 id="tagline"></h3> -->
+        <form class="input__group">
+            <div class="form__group">
+                
+                <input type="email" class="form-control" id="email__input" aria-describedby="emailHelp" placeholder="Email">
+                
+            </div>
+            <div class="form__group">
+                
+                <input type="username" class="form-control" id="username__input" aria-describedby="emailHelp" placeholder="Username">
+            
+            </div>
+            <div class="form__group">
+                
+                <input type="password" class="form-control" id="password__input" placeholder="Password">
+            </div>
+            <div class="form__group">
+                
+                <input type="password" class="form-control" id="password__confirm__input" placeholder="Confirm Password">
+            </div>
+        </form>
     
+        <button type="button" class="btn newUser__button btn-lg"><strong>Register</strong></button>
+</div>
+
+    <script type="module" src="scripts/main.js"></script>
 </body>
 
 </html>

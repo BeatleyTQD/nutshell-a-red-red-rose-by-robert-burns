@@ -114,5 +114,5 @@ export default function RenderBottomSecton() {
 }
 
  const renderBottomSection = (html) => {
-    document.querySelector(".bottom-section-container").innerHTML += html;
+    document.querySelector(".bottom-section").innerHTML += html;
     }
