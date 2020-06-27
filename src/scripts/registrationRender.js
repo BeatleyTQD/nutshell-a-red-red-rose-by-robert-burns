@@ -34,7 +34,7 @@ const renderRegis = () => {
     let regisHTMLRep = document.querySelector(".container-main")
     let regisHTML = regisHTMLCreator()
     regisHTMLRep.innerHTML = regisHTML
-    
+    loginEvents.registerNewUser()
     
 }
 

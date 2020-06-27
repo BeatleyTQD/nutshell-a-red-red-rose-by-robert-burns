@@ -2,15 +2,9 @@
   "users": [
     {
       "email": "me@me.com",
-      "username": "lykrin",
+      "username": "TestUser",
       "password": "123",
       "id": 1
-    },
-    {
-      "email": "me@me.com",
-      "username": "lykrin",
-      "password": "123",
-      "id": 2
     }
   ],
   "messages": [],

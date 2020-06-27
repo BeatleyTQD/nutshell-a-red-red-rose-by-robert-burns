@@ -16,7 +16,7 @@ const API = {
         
     },
     addUser(data){
-        return fetch(`${url}`, {
+        return fetch(`${url}users`, {
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'

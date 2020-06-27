@@ -27,9 +27,11 @@ const loginHTMLCreator = () => {
 
 const renderLogin = () => {
     let loginHTMLRep = document.querySelector(".container-main")
+    loginHTMLRep.innerHTML = ""
     let loginHTML = loginHTMLCreator()
     loginHTMLRep.innerHTML += loginHTML
-    loginEvents.loadRegistration().then(() => loginEvents.registerNewUser())
+    loginEvents.login()
+    loginEvents.loadRegistration()
 }
 
 

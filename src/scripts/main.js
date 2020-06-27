@@ -17,3 +17,6 @@ async function start(){
     EventListeners.setStandard()
 }
 start();
+
+
+export default data
