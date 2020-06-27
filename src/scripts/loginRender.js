@@ -1,4 +1,7 @@
+// Module made by Tyler H. and renders the login page to the dom
 import {registrationFactory, loginEvents } from "./login.js"
+
+// stores the login HTML and returns it upon invocation
 const loginHTMLCreator = () => {
     return `<div id="login__wrapper">
     <img id="logo__img" src="images/NutshellV2.png" alt="Nutshell Logo" width="10%" height="10%">
@@ -24,7 +27,7 @@ const loginHTMLCreator = () => {
 </div>`
 }
 
-
+// renders the login page to the dom and invokes the login and new registration event listeners
 const renderLogin = () => {
     let loginHTMLRep = document.querySelector(".container-main")
     loginHTMLRep.innerHTML = ""

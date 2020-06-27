@@ -1,9 +1,13 @@
+// Module made by Tyler H. and holds the new user factory function and the login/registration events
+
 import renderRegis from "./registrationRender.js"
 import API from "./API.js"
 import TopSectionTemplate from "./TopSectionTemplate.js"
 import CommentsTemplate from "./CommentsTemplate.js"
 import data from "./main.js"
+import EventListeners from "./EventListeners.js"
 
+// Takes the user inputs on the registration page and converts them into an object for the Push call
 const registrationFactory = (email, username, password) => {
     return {
         "email": email,
@@ -13,11 +17,14 @@ const registrationFactory = (email, username, password) => {
 }
 
 
-
+// Houses the login/registration events
 let loginEvents = {
+    // Sets the login button eventListeners: upon hitting enter it sets the active user and renders the Dashboard
+    // and checks for incorrect username/email and password inputs
     login(){
         
-        
+        // upon hitting enter it sets the active user and renders the Dashboard
+        // and checks for incorrect username/email and password inputs
         let loginButton = document.querySelector(".login__button")
         let enterEvent = document.querySelector("#login__wrapper")
         enterEvent.addEventListener("keypress", enterEvent => {
@@ -43,6 +50,7 @@ let loginEvents = {
                                             
                             TopSectionTemplate()
                             CommentsTemplate()
+                            EventListeners.setStandard()
         
                         }
                     }
@@ -57,7 +65,8 @@ let loginEvents = {
             }
             
         })
-
+        // upon clicking login it sets the active user and renders the Dashboard
+        // and checks for incorrect username/email and password inputs
         loginButton.addEventListener("click", clickEvent => {
         let username = document.querySelector("#username__input").value
         let password = document.querySelector("#password__input").value
@@ -80,6 +89,7 @@ let loginEvents = {
                                           
                         TopSectionTemplate()
                         CommentsTemplate()
+                        EventListeners.setStandard()
     
                     }
                 }
@@ -94,6 +104,7 @@ let loginEvents = {
         })
         
     },
+    // sets event listener to the registration button that loads the registration page to the dom
     loadRegistration(){
         let registerButton = document.querySelector(".register__button")
         registerButton.addEventListener("click", clickEvent => {
@@ -101,6 +112,8 @@ let loginEvents = {
         })
         
     },
+    // upon hitting enter it sets the active user, pushes the user object into the user API, and renders the Dashboard to the dom
+        // and checks for incorrect username/email, password, and password confirmation inputs
     registerNewUser() {
         let newRegisterButton = document.querySelector(".newUser__button")
         let newRegisterEnter = document.querySelector("#registration__wrapper")
@@ -141,6 +154,7 @@ let loginEvents = {
             
                                             TopSectionTemplate()
                                             CommentsTemplate()
+                                            EventListeners.setStandard()
                                            }
                                        }
                                    })
@@ -168,7 +182,8 @@ let loginEvents = {
             
             
         })
-
+        // upon clicking register it sets the active user, pushes the user object into the user API, and renders the Dashboard to the dom
+        // and checks for incorrect username/email, password, and password confirmation inputs
         newRegisterButton.addEventListener("click", clickEvent => {
             let email = document.querySelector("#email__input").value
             let username = document.querySelector("#username__input").value
@@ -205,6 +220,7 @@ let loginEvents = {
             
                                             TopSectionTemplate()
                                             CommentsTemplate()
+                                            EventListeners.setStandard()
                                            }
                                        }
                                    })
