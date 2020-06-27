@@ -1,0 +1,14 @@
+{
+    "users":[
+        {"id":1,"name":"Anthony"}
+    ],
+    "events":[
+        {"test":"test"}
+    ],
+    "comments":[
+        {"test":"test"}
+    ],
+    "news":[
+        {"test":"test"}
+    ]
+}

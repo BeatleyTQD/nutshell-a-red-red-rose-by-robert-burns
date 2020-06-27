@@ -1,4 +1,4 @@
-export default function RenderBottomSecton() { 
+export default function NewsTemplate() { 
     
         const bottomHTML = `<section class="bottom-section">
             <!-- CONTAINER FOR FRIENDS LIST -->
@@ -114,5 +114,5 @@ export default function RenderBottomSecton() {
 }
 
  const renderBottomSection = (html) => {
-    document.querySelector(".bottom-section").innerHTML += html;
+    document.querySelector(".bottom-section").innerHTML = html;
     }

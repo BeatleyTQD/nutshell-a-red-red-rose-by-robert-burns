@@ -9,29 +9,34 @@ export default function TopSectionTemplate(){
             <div class="flex-container">
                 <div class="sidebar-sticky text-center side-bar-custom">
                     <ul class="nav flex-column">
-                      <li class="nav-item">
-                        <a class="nav-link active " href="#">
+                      <li id="nav"  class="nav-item">
+                        <a name="dashboard" class="nav-link active " href="#">
                           Dashboard 
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#">
-                          Orders
+                      <li id="nav"  class="nav-item">
+                        <a name="news" class="nav-link " href="#">
+                          News
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#">
-                          Products
+                      <li id="nav" class="nav-item">
+                        <a name="events" class="nav-link " href="#">
+                          Events
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#">
-                          Customers
+                      <li id="nav" class="nav-item">
+                        <a name="comments" class="nav-link " href="#">
+                          Comments
                         </a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#">
-                          Reports
+                      <li id="nav" class="nav-item">
+                        <a name="users" class="nav-link " href="#">
+                          Users
+                        </a>
+                      </li>
+                      <li id="nav"  class="nav-item">
+                        <a name="friends" class="nav-link " href="#">
+                          Friends
                         </a>
                       </li>
                       
