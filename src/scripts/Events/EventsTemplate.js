@@ -7,8 +7,8 @@ export default function EventsTemplate(){
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Friend Picture</h5>
+                <p class="card-text">Friend Name</p>
                 <p class="card-text">Friend Details</p>
-                <a href="#" class="btn purple-button">?Add friend?</a>
             </div>
             </div>
     </div>
@@ -16,8 +16,8 @@ export default function EventsTemplate(){
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Friend Picture</h5>
+                <p class="card-text">Friend Name</p>
                 <p class="card-text">Friend Details</p>
-                <a href="#" class="btn purple-button">?Add friend?</a>
             </div>
             </div>
     </div>
@@ -25,8 +25,8 @@ export default function EventsTemplate(){
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Friend Picture</h5>
+                <p class="card-text">Friend Name</p>
                 <p class="card-text">Friend Details</p>
-                <a href="#" class="btn purple-button">?Add friend?</a>
             </div>
             </div>
     </div>
@@ -34,13 +34,13 @@ export default function EventsTemplate(){
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Friend Picture</h5>
+                <p class="card-text">Friend Name</p>
                 <p class="card-text">Friend Details</p>
-                <a href="#" class="btn purple-button">?Add friend?</a>
             </div>
             </div>
     </div>
     <!-- BUTTON TO MANUALLY ADD FRIENDS BY SEARCHING FOR NAME -->
-        <button type="button" class="btn gray-button btn-lg">Add Friend</button>
+        <button type="button" class="btn purple-button btn-lg">Add Friend</button>
 </section>
         <section class="container">
         <div class="card text-center">
@@ -86,13 +86,13 @@ export default function EventsTemplate(){
           <h3 class="mx-auto" style="width: 170px;">Add an Event</h3>
             <div class="input-group mb-3">
              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+                <span class="input-group-text" id="inputGroup-sizing-default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             </div>
             <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
             <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Location</span>
+                <span class="input-group-text" id="inputGroup-sizing-default">&nbsp;&nbsp;Location&nbsp;&nbsp;</span>
             </div>
             <input type="text" class="form-control  user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
@@ -102,7 +102,7 @@ export default function EventsTemplate(){
             </div>
             <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
-            <button type="button" class="btn btn-secondary">Submit</button>
+            <button type="button" class="btn gray-button btn-secondary">Submit</button>
         </section>
         </section>
 

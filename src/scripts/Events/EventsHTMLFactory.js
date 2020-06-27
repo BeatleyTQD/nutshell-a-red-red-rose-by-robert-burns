@@ -17,5 +17,34 @@ const eventsConverter = (eventsItem) => {
 }
 
 
+// eventsHTMLInjector = () => {
+//     for loop going through the object converter{  
+
+//     }
+//     `<section class="enter-new-article"></section>
+//     <h3 class="mx-auto" style="width: 170px;">Add an Event</h3>
+//       <div class="input-group mb-3">
+//        <div class="input-group-prepend">
+//           <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+//       </div>
+//       <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+//       </div>
+//       <div class="input-group mb-3">
+//       <div class="input-group-prepend">
+//           <span class="input-group-text" id="inputGroup-sizing-default">Location</span>
+//       </div>
+//       <input type="text" class="form-control  user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+//       </div>
+//       <div class="input-group mb-3">
+//       <div class="input-group-prepend">
+//           <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
+//       </div>
+//       <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+//       </div>
+//       <button type="button" class="btn btn-secondary">Submit</button>
+//   </section>
+//   </section>`
+// }
+
 
 export default eventsConverter

@@ -5,41 +5,41 @@ export default function CommentsTemplate(){
     <div class="friend-entry">
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Friend Picture</h5>
-                <p class="card-text">Friend Details</p>
-                <a href="#" class="btn purple-button">?Add friend?</a>
+              <h5 class="card-title">Friend Picture</h5>
+              <p class="card-text">Friend Name</p>
+              <p class="card-text">Friend Details</p>
             </div>
             </div>
     </div>
     <div class="friend-entry">
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Friend Picture</h5>
-                <p class="card-text">Friend Details</p>
-                <a href="#" class="btn purple-button">?Add friend?</a>
+              <h5 class="card-title">Friend Picture</h5>
+              <p class="card-text">Friend Name</p>
+              <p class="card-text">Friend Details</p>
             </div>
             </div>
     </div>
     <div class="friend-entry">
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Friend Picture</h5>
-                <p class="card-text">Friend Details</p>
-                <a href="#" class="btn purple-button">?Add friend?</a>
+              <h5 class="card-title">Friend Picture</h5>
+              <p class="card-text">Friend Name</p>
+              <p class="card-text">Friend Details</p>
             </div>
             </div>
     </div>
     <div class="friend-entry">
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Friend Picture</h5>
-                <p class="card-text">Friend Details</p>
-                <a href="#" class="btn purple-button">?Add friend?</a>
+              <h5 class="card-title">Friend Picture</h5>
+              <p class="card-text">Friend Name</p>
+              <p class="card-text">Friend Details</p>
             </div>
             </div>
     </div>
     <!-- BUTTON TO MANUALLY ADD FRIENDS BY SEARCHING FOR NAME -->
-        <button type="button" class="btn gray-button btn-lg">Add Friend</button>
+        <button type="button" class="btn purple-button btn-lg">Add Friend</button>
 </section>
   <!--BEGINNING OF MESSAGING AREA-->
     <section class="container">
