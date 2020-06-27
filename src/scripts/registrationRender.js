@@ -1,3 +1,5 @@
+import {registrationFactory, loginEvents } from "./login.js"
+
 const regisHTMLCreator = () => {
     return ` <div id="registration__wrapper">
     <img id="logo__img" src="images/NutshellV2.png" alt="Nutshell Logo" width="10%" height="10%">
@@ -32,6 +34,8 @@ const renderRegis = () => {
     let regisHTMLRep = document.querySelector(".container-main")
     let regisHTML = regisHTMLCreator()
     regisHTMLRep.innerHTML = regisHTML
+    
+    
 }
 
 export default renderRegis

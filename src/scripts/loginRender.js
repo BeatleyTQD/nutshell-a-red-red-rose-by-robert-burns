@@ -1,3 +1,4 @@
+import {registrationFactory, loginEvents } from "./login.js"
 const loginHTMLCreator = () => {
     return `<div id="login__wrapper">
     <img id="logo__img" src="images/NutshellV2.png" alt="Nutshell Logo" width="10%" height="10%">
@@ -19,7 +20,7 @@ const loginHTMLCreator = () => {
     </form>
 
     <button type="submit" class="btn login__button btn-lg"><strong>Login</strong></button>
-    <a href="registration.html"><button" class="btn register__button btn-lg"><strong>Register New User</strong></button></a>
+    <button" class="btn register__button btn-lg"><strong>Register New User</strong></button>
 </div>`
 }
 
@@ -27,7 +28,8 @@ const loginHTMLCreator = () => {
 const renderLogin = () => {
     let loginHTMLRep = document.querySelector(".container-main")
     let loginHTML = loginHTMLCreator()
-    loginHTMLRep.innerHTML = loginHTML
+    loginHTMLRep.innerHTML += loginHTML
+    loginEvents.loadRegistration().then(() => loginEvents.registerNewUser())
 }
 
 

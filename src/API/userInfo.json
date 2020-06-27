@@ -1,22 +1,20 @@
 {
-    "users": [
-        
-    ],
-
-    "messages": [
-
-    ],
-
-    "news": [
-
-    ],
-
-    "friends": [
-
-    ],
-
-    "tasks": [
-        
-    ]
-        
+  "users": [
+    {
+      "email": "me@me.com",
+      "username": "lykrin",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "me@me.com",
+      "username": "lykrin",
+      "password": "123",
+      "id": 2
+    }
+  ],
+  "messages": [],
+  "news": [],
+  "friends": [],
+  "tasks": []
 }

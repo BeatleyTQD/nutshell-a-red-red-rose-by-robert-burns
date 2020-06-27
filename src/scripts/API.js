@@ -6,7 +6,7 @@ const url = 'http://localhost:8088/'
  const API = {
     /// USERS BASE APIs////
     async getUsers(){
-        const res = await fetch(`${url}`)
+        const res = await fetch(`${url}users`)
          return await res.json()
     },
     async getUserById(id){
@@ -15,7 +15,7 @@ const url = 'http://localhost:8088/'
     },
     async addUser(data){
         try {
-            const res = await fetch(`${url}`, {
+            const res = await fetch(`${url}users`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
