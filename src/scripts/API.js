@@ -3,56 +3,54 @@ const url = 'http://localhost:8088/'
  * users/articles/events/tasks/friends/messages
  */
 // USERS BASE APIs///
- const API = {
+const API = {
     /// USERS BASE APIs////
-    async getUsers(){
-        const res = await fetch(`${url}`)
-         return await res.json()
+    getUsers(){
+        return fetch(`http://localhost:8088/users`)
+        .then(res=>res.json())
+        .then(res=>res)
     },
-    async getUserById(id){
-        const res = await fetch(`${url}${id}`)
-        return await res.json()
+    getUserById(id){
+        return fetch(`${url}${id}`)
+        .then(res=>res.json())
+        
     },
-    async addUser(data){
-        try {
-            const res = await fetch(`${url}`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                    // 'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: JSON.stringify(data)
-            })
-            return GlobalSuccess(res)
-        }
-        catch (err) {
-            return GlobalError(err)
-        }
+    addUser(data){
+        return fetch(`${url}`, {
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+              },
+              body: JSON.stringify(data)
+        })
+        .then(GlobalSuccess)
+        .catch(GlobalError)
     },
 
-    async updateUser(data, id){
-        const res = await fetch(`${url}${id}`, {
+    updateUser(data, id){
+        return fetch(`${url}${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
                 // 'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: JSON.stringify(data)
+              },
+              body: JSON.stringify(data)
         })
-        const err = await GlobalSuccess(res)
-        return GlobalError(err)
+        .then(GlobalSuccess)
+        .then(GlobalError)
     },
 
-    async deleteUser(id){
-        const res = await fetch(`${url}${id}`, {
+    deleteUser(id){
+        return fetch(`${url}${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
                 // 'Content-Type': 'application/x-www-form-urlencoded',
-            }
+              }
         })
-        const err = await GlobalSuccess(res)
-        return GlobalError(err)
+        .then(GlobalSuccess)
+        .then(GlobalError)
     }
 }
 
