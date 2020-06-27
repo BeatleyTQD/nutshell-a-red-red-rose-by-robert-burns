@@ -51,7 +51,13 @@ const API = {
         })
         .then(GlobalSuccess)
         .then(GlobalError)
-    }
+    },
+
+    getEvents(){
+        return fetch(`${url}events`)
+        .then(res=>res.json())
+        .then(res=>res)
+    },
 }
 
 

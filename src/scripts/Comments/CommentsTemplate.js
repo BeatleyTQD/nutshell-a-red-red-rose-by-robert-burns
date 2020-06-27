@@ -41,6 +41,7 @@ export default function CommentsTemplate(){
     <!-- BUTTON TO MANUALLY ADD FRIENDS BY SEARCHING FOR NAME -->
         <button type="button" class="btn gray-button btn-lg">Add Friend</button>
 </section>
+  <!--BEGINNING OF MESSAGING AREA-->
     <section class="container">
         <div class="card text-center">
             <div class="card-header"></div>
@@ -90,3 +91,10 @@ export default function CommentsTemplate(){
 const renderComments=(html)=>{
     document.querySelector(".bottom-section").innerHTML = html 
 }
+
+
+// const renderComments = () => {
+//       //code where data is passed into html converter goes here
+
+      
+// }

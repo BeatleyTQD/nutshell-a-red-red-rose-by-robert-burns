@@ -42,6 +42,7 @@ export default function EventsTemplate(){
     <!-- BUTTON TO MANUALLY ADD FRIENDS BY SEARCHING FOR NAME -->
         <button type="button" class="btn gray-button btn-lg">Add Friend</button>
 </section>
+        <section class="container">
         <div class="card text-center">
             <div class="card-header"></div>
             <div class="card-body">
@@ -103,7 +104,7 @@ export default function EventsTemplate(){
             </div>
             <button type="button" class="btn btn-secondary">Submit</button>
         </section>
-    
+        </section>
 
     `
     renderEvents(html);
