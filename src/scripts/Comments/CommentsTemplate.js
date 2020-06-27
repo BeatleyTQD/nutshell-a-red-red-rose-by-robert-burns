@@ -73,7 +73,6 @@ export default function CommentsTemplate(){
             <div class="card-footer text-muted"></div>
           </div>
           <hr/>
-          
         <section class="enter-chat-message">
             <div class="input-group">
                 <div class="input-group-prepend">
@@ -91,10 +90,3 @@ export default function CommentsTemplate(){
 const renderComments=(html)=>{
     document.querySelector(".bottom-section").innerHTML = html 
 }
-
-
-// const renderComments = () => {
-//       //code where data is passed into html converter goes here
-
-      
-// }

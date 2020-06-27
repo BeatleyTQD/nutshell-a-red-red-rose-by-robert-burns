@@ -102,7 +102,7 @@ export default function EventsTemplate(){
             </div>
             <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
-            <button type="button" class="btn gray-button btn-secondary">Submit</button>
+            <button type="button" class="btn gray-button btn-secondary float-right">Submit</button>
         </section>
         </section>
 
