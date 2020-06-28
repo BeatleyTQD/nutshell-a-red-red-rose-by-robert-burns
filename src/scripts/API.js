@@ -6,17 +6,17 @@ const url = 'http://localhost:8088/'
 const API = {
     /// USERS BASE APIs////
     getUsers(){
-        return fetch(`http://localhost:8088/users`)
+        return fetch(`${url}users`)
         .then(res=>res.json())
         .then(res=>res)
     },
     getUserById(id){
-        return fetch(`${url}${id}`)
+        return fetch(`${url}users/${id}`)
         .then(res=>res.json())
         
     },
     addUser(data){
-        return fetch(`${url}`, {
+        return fetch(`${url}users`, {
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ const API = {
     },
 
     updateUser(data, id){
-        return fetch(`${url}${id}`, {
+        return fetch(`${url}users/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -51,7 +51,16 @@ const API = {
         })
         .then(GlobalSuccess)
         .then(GlobalError)
+    },
+
+    // Tasks //
+    getTasks(){
+        return fetch(`${url}tasks`)
+        .then(res=>res.json())
+        .then(res=>res)
+        .catch(GlobalError);
     }
+
 }
 
 
