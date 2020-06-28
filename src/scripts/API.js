@@ -59,6 +59,27 @@ const API = {
         .then(res=>res.json())
         .then(res=>res)
         .catch(GlobalError);
+    },
+
+    // News //
+    getNews(){
+        return fetch(`${url}news`)
+        .then(res=>res.json())
+        .then(res=>res)
+    },
+
+    // Events //
+    getEvents(){
+        return fetch(`${url}events`)
+        .then(res=>res.json())
+        .then(res=>res)
+    },
+
+    // Comments //
+    getComments(){
+        return fetch(`${url}comments`)
+        .then(res=>res.json())
+        .then(res=>res)
     }
 
 }
