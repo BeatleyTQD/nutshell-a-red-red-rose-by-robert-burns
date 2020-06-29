@@ -1,8 +1,8 @@
-import renderRegis from "./registrationRender.js"
-import renderLogin from "./loginRender.js"
+import renderRegis from "../Registration/registrationRender.js"
+import renderLogin from "../Login/loginRender.js"
 import EventListeners from './EventListeners.js'
 import TopSectionTemplate from './TopSectionTemplate.js'
-import NewsTemplate from "./NewsTemplate.js"
+import NewsTemplate from "../News/NewsTemplate.js"
 import API from './API.js'
 let data = {
     users:[]

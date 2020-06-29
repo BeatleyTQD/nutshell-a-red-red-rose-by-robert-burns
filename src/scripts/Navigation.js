@@ -1,7 +1,7 @@
-import CommentsTemplate from './CommentsTemplate.js';
-import EventsTemplate from './EventsTemplate.js';
-import NewsTemplate from './NewsTemplate.js';
-import renderLogin from './loginRender.js'
+import CommentsTemplate from '../Comments/CommentsTemplate.js';
+import EventsTemplate from '../Events/EventsTemplate.js';
+import NewsTemplate from '../News/NewsTemplate.js';
+import renderLogin from '../Login/loginRender.js'
 
 export default function navigation(e){
     e.preventDefault();

@@ -1,5 +1,5 @@
 // Module made by Tyler H. and renders the registration page to the dom
-import {registrationFactory, loginEvents } from "./login.js"
+import {registrationFactory, loginEvents } from "../Login/login.js"
 
 // stores the registration HTML and returns it upon invocation
 const regisHTMLCreator = () => {
