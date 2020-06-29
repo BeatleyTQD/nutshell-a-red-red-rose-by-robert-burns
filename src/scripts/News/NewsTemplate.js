@@ -6,7 +6,7 @@ export default function NewsTemplate(news){
         news.forEach(newsObj => {
             NewsTemplate.innerHTML += newsConverter(newsObj)
     })
-    NewsTemplate += newsInputField()
+    NewsTemplate += newsInputField(news)
 }
 
 const newsConverter = (newsItem) => {
@@ -24,7 +24,7 @@ const newsConverter = (newsItem) => {
             return newsHTML
 }
     
-const newsInputField = () => {
+const newsInputField = (obj) => {
     const html =
             `<!-- SECTION FOR CREATING NEW ARTICLE -->
             <section class="enter-new-article">
@@ -48,6 +48,7 @@ const newsInputField = () => {
                 <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                 </div>
                 <button type="button" class="btn gray-button float-right">Submit</button>
+                ${obj.userId == window.sessionStorage.activeUser ? `<button type="button" name=${obj.id} id="delete-news-btn">Delete</button>` : ""}
             </section>
             </section>
         `
