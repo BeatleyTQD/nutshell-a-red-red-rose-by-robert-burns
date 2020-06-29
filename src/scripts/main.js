@@ -1,4 +1,4 @@
-import eventsConverter from "./Events/EventsHTMLFactory.js"
+import eventsConverter from "./Events/EventsTemplate.js"
 import renderRegis from "./Registration/registrationRender.js"
 import renderLogin from "./Login/loginRender.js"
 import EventListeners from './EventListeners.js'

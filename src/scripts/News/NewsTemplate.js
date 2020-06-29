@@ -1,64 +1,11 @@
 export default function NewsTemplate() { 
     
-        const bottomHTML = `<section class="bottom-section">
-            <!-- CONTAINER FOR FRIENDS LIST -->
-            <section class="friend-list">
-                <!-- INDIVIDUAL FRIEND ENTRIES -->
-                <div class="friend-entry">
-                    <div class="card text-center" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Friend Picture</h5>
-                            <p class="card-text">Friend Name</p>
-                            <p class="card-text">Friend Details</p>
-                        </div>
-                        </div>
-                </div>
-                <div class="friend-entry">
-                    <div class="card text-center" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Friend Picture</h5>
-                            <p class="card-text">Friend Name</p>
-                            <p class="card-text">Friend Details</p>
-                        </div>
-                        </div>
-                </div>
-                <div class="friend-entry">
-                    <div class="card text-center" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Friend Picture</h5>
-                            <p class="card-text">Friend Name</p>
-                            <p class="card-text">Friend Details</p> 
-                        </div>
-                        </div>
-                </div>
-                <div class="friend-entry">
-                    <div class="card text-center" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Friend Picture</h5>
-                            <p class="card-text">Friend Name</p>
-                            <p class="card-text">Friend Details</p>
-                        </div>
-                        </div>
-                </div>
-                <!-- BUTTON TO MANUALLY ADD FRIENDS BY SEARCHING FOR NAME -->
-                    <button type="button" class="btn purple-button btn-lg">Add Friend</button>
-            </section>
-
-            <!-- AREA THAT WILL EVENTUALLY CHANGE BASED ON USER SELECTION OF NEWS/EVENTS/CHAT -->
+        const bottomHTML = `
             <section class="container">
             <!-- SECTION FOR POPULATING NEWS ENTRIES -->
             <section class="news-feed">
                 <!-- INDIVIDUAL NEWS ENTRY -->
-            <div class="card text-center">
-                <div class="card-header"></div>
-                <div class="card-body">
-                <h5 class="card-title">News Headline</h5>
-                <p class="card-text">Jean shorts bicycle rights proident kogi pork belly direct trade selfies enamel pin before they sold out. Health goth biodiesel edison bulb jean shorts brunch, ut bushwick 90's asymmetrical woke. Chambray stumptown brooklyn nostrud, pinterest kitsch aliqua hoodie fingerstache godard tousled.</p>
-                <a href="#" class="btn purple-button">URL</a>
-                </div>
-                <div class="card-footer text-muted"></div>
-            </div>
-            <hr/>
+            
 
             <div class="card text-center">
                 <div class="card-header"></div>
@@ -116,3 +63,9 @@ export default function NewsTemplate() {
  const renderBottomSection = (html) => {
     document.querySelector(".bottom-section").innerHTML = html;
     }
+const newsGenerator = () =>{
+
+}
+const newsTemplate = (obj)=>{
+    return ``
+}

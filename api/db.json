@@ -1,19 +1,44 @@
 {
-    "users":[
-        {"id":1,"name":"Anthony"}
-    ],
-    "events":[
-        {"name":"test", "date": "date", "location":"location", "synopsis":"synopsis"}
-    ],
-    "comments":[
-        {"test":"test"}
-    ],
-    "news":[
-        {"test":"test"}
-    ],
-    "tasks":[
-        {"task":"Laundry"},
-        {"task":"Trash"},
-        {"task":"Park"}
-    ]
+  "users": [
+    { "id": 1, "username": "Steve", "email": "me@me.com", "password": "xxxxxxxxxxxxxxxxxxxxx" },
+    {
+      "email": "dan@gmail.com",
+      "username": "dan",
+      "password": "123",
+      "id": 2
+    }
+  ],
+  "events": [
+    {
+      "name": "test",
+      "date": "date",
+      "location": "location",
+      "synopsis": "synopsis"
+    }
+  ],
+  "comments": [
+    {
+      "test": "test"
+    }
+  ],
+  "news": [
+    {
+        "id": 1,
+        "userId": 2,
+        "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
+        "title": "Wormholes Allow Information to Escape Black Holes",
+        "synopsis": "Check out this recent discovery about workholes"
+    }
+  ],
+  "tasks": [
+    {
+      "task": "Laundry"
+    },
+    {
+      "task": "Trash"
+    },
+    {
+      "task": "Park"
+    }
+  ]
 }
