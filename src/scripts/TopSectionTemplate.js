@@ -1,3 +1,5 @@
+import data from './main.js'
+
 export default function TopSectionTemplate(){
     let html =  `
     <div class="tp-container">
@@ -44,6 +46,7 @@ export default function TopSectionTemplate(){
         
                   </div>
             </div>
+          
             <div class="user-section col-4  flex-container"> 
                 <h1>Dashboard</h1>
                 <h2 ><strong>Welcome</strong> Anthony</h2>
@@ -54,7 +57,7 @@ export default function TopSectionTemplate(){
                     <div class="stats text-right">
                    <div class="tasks text-right">
                        <h3>Friends: 0</h3>
-                       <h3>Tasks: 0</h3>
+                       <h3>Tasks: ${data.tasks.length}</h3>
                        <h3>Events: 0</h3>
                    </div>
                 </div>
@@ -62,33 +65,12 @@ export default function TopSectionTemplate(){
                 </div>
                  
             </div>
+
+
             <div class="task-section col-6">
                 <div class="tasks-box">
                     <div class="task-cards">
-                        <div class="t-card d-flex flex-row">
-                            <input class="checkbox" type="checkbox" name="task">
-                            <h1>Laundry</h1>
-                        </div>
-                        <div class="t-card d-flex flex-row">
-                            <input class="checkbox" type="checkbox" name="task">
-                            <h1>Write Journal</h1>
-                        </div>
-                        <div class="t-card d-flex flex-row">
-                            <input class="checkbox" type="checkbox" name="task">
-                            <h1>Read Book</h1>
-                        </div>
-                        <div class="t-card d-flex flex-row">
-                            <input class="checkbox" type="checkbox" name="task">
-                            <h1>Kill the Gym</h1>
-                        </div>
-                        <div class="t-card d-flex flex-row">
-                            <input class="checkbox" type="checkbox" name="task">
-                            <h1>Break Shit</h1>
-                        </div>
-                        <div class="t-card d-flex flex-row">
-                            <input class="checkbox" type="checkbox" name="task">
-                            <h1>Enter Beast Mode</h1>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

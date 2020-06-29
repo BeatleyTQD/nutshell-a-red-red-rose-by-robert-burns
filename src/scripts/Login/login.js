@@ -1,11 +1,11 @@
 // Module made by Tyler H. and holds the new user factory function and the login/registration events
 
 import renderRegis from "../Registration/registrationRender.js"
-import API from "../scripts/API.js"
-import TopSectionTemplate from "../scripts/TopSectionTemplate.js"
+import API from "../API.js"
+import TopSectionTemplate from "../TopSectionTemplate.js"
 import CommentsTemplate from "../Comments/CommentsTemplate.js"
-import data from "../scripts/main.js"
-import EventListeners from "../scripts/EventListeners.js"
+import data from "../main.js"
+import EventListeners from "../EventListeners.js"
 
 // Takes the user inputs on the registration page and converts them into an object for the Push call
 const registrationFactory = (email, username, password) => {
