@@ -2,7 +2,6 @@ export default function TaskCardGenerator(arr){
    for(let i = 0; i < arr.length; i++){
        renderTaskCard(makeTaskCard(arr[i]));
    }
-   console.log('Cards Generated');
 }
 const renderTaskCard = (html) =>{
     document.querySelector('.task-cards').innerHTML += html;
