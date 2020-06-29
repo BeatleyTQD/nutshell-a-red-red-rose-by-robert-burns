@@ -9,6 +9,12 @@
       "username": "TestUser",
       "password": "123",
       "id": 2
+    },
+    {
+      "email": "meme@meme.com",
+      "username": "TestUser2",
+      "password": "123",
+      "id": 3
     }
   ],
   "events": [
