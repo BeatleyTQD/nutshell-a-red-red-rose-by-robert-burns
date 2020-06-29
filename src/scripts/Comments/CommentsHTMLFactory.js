@@ -1,5 +1,3 @@
-const { default: API } = require("../API")
-
 const commentsConverter = (commentsItem) => {
     const commentsHTML = 
             `<div class="card text-center">

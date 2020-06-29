@@ -1,4 +1,3 @@
-import API from "../API.js"
 const eventsConverter = (eventsItem) => {
     let eventsHTML = 
     `<div class="card text-center">

@@ -16,7 +16,7 @@ newRegisterButton.addEventListener("click", clickEvent => {
     let password = document.querySelector("#password__input").value
     let passwordConfirm = document.querySelector("#password__confirm__input").value
     let usernameCheck = true
-    for(let user of ) {
+    for(let user of     ) {
         if(user.username === username) {
             usernameCheck = false
         }
