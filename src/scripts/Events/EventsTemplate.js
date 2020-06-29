@@ -1,3 +1,5 @@
+//Module by Brandon W. Responsible for iterating through event data to generate HTML string with each entry as well as field for adding new event article.
+
 export default function EventsTemplate(events){
         let EventsTemplate = document.querySelector(".bottom-section")
         EventsTemplate.innerHTML = ""
@@ -45,7 +47,7 @@ const eventsInputField = () => {
       </div>
       <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
       </div>
-      <button type="button" class="btn btn-secondary">Submit</button>
+      <button type="button" class="btn btn-secondary float-right">Submit</button>
   </section>
   </section>`
   document.querySelector(".bottom-section").innerHTML += html

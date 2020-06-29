@@ -1,3 +1,5 @@
+//Module by Brandon W. Responsible for iterating through news data to generate HTML string with each entry as well as field for adding new news article.
+
 export default function NewsTemplate(news){
         let NewsTemplate = document.querySelector(".bottom-section")
         NewsTemplate.innerHTML = ""
