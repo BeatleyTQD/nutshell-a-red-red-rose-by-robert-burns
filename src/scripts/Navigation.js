@@ -19,11 +19,11 @@ export default function navigation(e){
             break;
         case "events":
             console.log('Rendering Events')
-            EventsTemplate();
+            EventsTemplate(data.events);
             break;
         case "news":
             console.log("Rendering News")
-            NewsTemplate()
+            NewsTemplate(data.news)
             break;
         case "friends":
             console.log("Rendering Friends")

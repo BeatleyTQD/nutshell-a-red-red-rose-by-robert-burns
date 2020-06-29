@@ -23,7 +23,7 @@ async function start(){
     if(window.sessionStorage.activeUser) {
         TopSectionTemplate();
         TaskCardGenerator(data.tasks);
-        NewsTemplate();
+        NewsTemplate(data.news);
         EventListeners.setStandard();
     } else{
         renderLogin()
