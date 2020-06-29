@@ -1,10 +1,11 @@
-import renderRegis from "./Registration/registrationRender.js";
-import renderLogin from "./Login/loginRender.js";
-import EventListeners from './EventListeners.js';
-import TopSectionTemplate from './TopSectionTemplate.js';
-import TaskCardGenerator from './Tasks/TaskCardGenerator.js';
-import NewsTemplate from "./News/NewsTemplate.js";
-import API from './API.js';
+import eventsConverter from "./Events/EventsHTMLFactory.js"
+import renderRegis from "./Registration/registrationRender.js"
+import renderLogin from "./Login/loginRender.js"
+import EventListeners from './EventListeners.js'
+import TopSectionTemplate from './TopSectionTemplate.js'
+import NewsTemplate from "./News/NewsTemplate.js"
+import TaskCardGenerator from "./Tasks/TaskCardGenerator.js"
+import API from './API.js'
 let data = {
     user:{},
     users:[],
