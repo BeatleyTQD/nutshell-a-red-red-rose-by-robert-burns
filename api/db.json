@@ -3,7 +3,7 @@
         {"id":1,"name":"Anthony"}
     ],
     "events":[
-        {"test":"test"}
+        {"name":"test", "date": "date", "location":"location", "synopsis":"synopsis"}
     ],
     "comments":[
         {"test":"test"}

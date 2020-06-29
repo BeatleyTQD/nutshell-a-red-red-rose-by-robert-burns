@@ -8,8 +8,8 @@ export default function NewsTemplate() {
                     <div class="card text-center" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Friend Picture</h5>
+                            <p class="card-text">Friend Name</p>
                             <p class="card-text">Friend Details</p>
-                            <a href="#" class="btn purple-button">?Add friend?</a>
                         </div>
                         </div>
                 </div>
@@ -17,8 +17,8 @@ export default function NewsTemplate() {
                     <div class="card text-center" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Friend Picture</h5>
+                            <p class="card-text">Friend Name</p>
                             <p class="card-text">Friend Details</p>
-                            <a href="#" class="btn purple-button">?Add friend?</a>
                         </div>
                         </div>
                 </div>
@@ -26,8 +26,8 @@ export default function NewsTemplate() {
                     <div class="card text-center" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Friend Picture</h5>
-                            <p class="card-text">Friend Details</p>
-                            <a href="#" class="btn purple-button">?Add friend?</a>
+                            <p class="card-text">Friend Name</p>
+                            <p class="card-text">Friend Details</p> 
                         </div>
                         </div>
                 </div>
@@ -35,13 +35,13 @@ export default function NewsTemplate() {
                     <div class="card text-center" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Friend Picture</h5>
+                            <p class="card-text">Friend Name</p>
                             <p class="card-text">Friend Details</p>
-                            <a href="#" class="btn purple-button">?Add friend?</a>
                         </div>
                         </div>
                 </div>
                 <!-- BUTTON TO MANUALLY ADD FRIENDS BY SEARCHING FOR NAME -->
-                    <button type="button" class="btn gray-button btn-lg">Add Friend</button>
+                    <button type="button" class="btn purple-button btn-lg">Add Friend</button>
             </section>
 
             <!-- AREA THAT WILL EVENTUALLY CHANGE BASED ON USER SELECTION OF NEWS/EVENTS/CHAT -->
@@ -100,11 +100,11 @@ export default function NewsTemplate() {
                 </div>
                 <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">URL</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">&nbsp;&nbsp;&nbsp;&nbsp;URL&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 </div>
                 <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                 </div>
-                <button type="button" class="btn gray-button">Submit</button>
+                <button type="button" class="btn gray-button float-right">Submit</button>
             </section>
 
             </section>
