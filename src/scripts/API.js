@@ -42,7 +42,7 @@ const API = {
     },
 
     deleteUser(id){
-        return fetch(`${url}${id}`, {
+        return fetch(`${url}users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -75,6 +75,30 @@ const API = {
         .then(res=>res)
     },
 
+    deleteEvent(id){
+        return fetch(`${url}events/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+              }
+        })
+        .then(GlobalSuccess)
+        .catch(GlobalError)
+
+    }, saveEvents(data){
+        return fetch(`${url}events`, {
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+              },
+              body: JSON.stringify(data)
+        })
+        .then(GlobalSuccess)
+        .catch(GlobalError)
+    },
+
     // Comments //
     getComments(){
         return fetch(`${url}comments`)
@@ -86,7 +110,8 @@ const API = {
 
 
 let GlobalSuccess = (res)=>{
-    console.log(res, 'Success');
+    console.log("Success")
+    return res;
 }
 let GlobalError = (err)=>{
     console.log(err, 'Error')
