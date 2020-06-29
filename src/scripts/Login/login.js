@@ -6,6 +6,7 @@ import TopSectionTemplate from "../TopSectionTemplate.js"
 import CommentsTemplate from "../Comments/CommentsTemplate.js"
 import data from "../main.js"
 import EventListeners from "../EventListeners.js"
+import TaskCardGenerator from "../Tasks/TaskCardGenerator.js"
 
 // Takes the user inputs on the registration page and converts them into an object for the Push call
 const registrationFactory = (email, username, password) => {
@@ -51,6 +52,7 @@ let loginEvents = {
                             TopSectionTemplate()
                             CommentsTemplate()
                             EventListeners.setStandard()
+                            TaskCardGenerator(data.tasks);
         
                         }
                     }
@@ -90,6 +92,7 @@ let loginEvents = {
                         TopSectionTemplate()
                         CommentsTemplate()
                         EventListeners.setStandard()
+                        TaskCardGenerator(data.tasks);
     
                     }
                 }
@@ -155,6 +158,7 @@ let loginEvents = {
                                             TopSectionTemplate()
                                             CommentsTemplate()
                                             EventListeners.setStandard()
+                                            TaskCardGenerator(data.tasks);
                                            }
                                        }
                                    })
@@ -221,6 +225,7 @@ let loginEvents = {
                                             TopSectionTemplate()
                                             CommentsTemplate()
                                             EventListeners.setStandard()
+                                            TaskCardGenerator(data.tasks);
                                            }
                                        }
                                    })

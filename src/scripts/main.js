@@ -23,10 +23,11 @@ async function start(){
    data.events = await API.getEvents();
    data.comments = await API.getComments();
     console.log(data, "Rendering All Data");
-    TopSectionTemplate();
-    TaskCardGenerator(data.tasks);
-    NewsTemplate();
-    EventListeners.setStandard();
+    renderLogin()
+    // TopSectionTemplate();
+    // TaskCardGenerator(data.tasks);
+    // NewsTemplate();
+    // EventListeners.setStandard();
   
 }
 
