@@ -29,7 +29,9 @@ const loginHTMLCreator = () => {
 
 // renders the login page to the dom and invokes the login and new registration event listeners
 const renderLogin = () => {
-    let loginHTMLRep = document.querySelector(".container-main")
+    let loginHTMLRep = document.querySelector(".top-sec-container")
+    let bottomClear = document.querySelector(".bottom-section")
+    bottomClear.innerHTML = ""
     loginHTMLRep.innerHTML = ""
     let loginHTML = loginHTMLCreator()
     loginHTMLRep.innerHTML += loginHTML

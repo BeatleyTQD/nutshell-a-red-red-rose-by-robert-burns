@@ -34,7 +34,7 @@ const regisHTMLCreator = () => {
 
 // renders the registration page to the dom and invokes the registration event listeners
 const renderRegis = () => {
-    let regisHTMLRep = document.querySelector(".container-main")
+    let regisHTMLRep = document.querySelector(".top-sec-container")
     let regisHTML = regisHTMLCreator()
     regisHTMLRep.innerHTML = regisHTML
     loginEvents.registerNewUser()
