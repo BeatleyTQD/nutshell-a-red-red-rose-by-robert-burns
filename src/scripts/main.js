@@ -1,4 +1,3 @@
-import renderRegis from "./Registration/registrationRender.js"
 import renderLogin from "./Login/loginRender.js"
 import EventListeners from './EventListeners.js'
 import TopSectionTemplate from './TopSectionTemplate.js'
@@ -22,11 +21,15 @@ async function start(){
    data.events = await API.getEvents();
    data.comments = await API.getComments();
     console.log(data, "Rendering All Data");
-    renderLogin()
-    // TopSectionTemplate();
-    // TaskCardGenerator(data.tasks);
-    // NewsTemplate();
-    // EventListeners.setStandard();
+    if(window.sessionStorage.activeUser) {
+        TopSectionTemplate();
+        TaskCardGenerator(data.tasks);
+        NewsTemplate();
+        EventListeners.setStandard();
+    } else{
+        renderLogin()
+    }
+   
   
 }
 
