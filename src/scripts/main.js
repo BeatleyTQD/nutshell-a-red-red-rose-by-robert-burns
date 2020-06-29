@@ -1,4 +1,3 @@
-
 import renderLogin from "./Login/loginRender.js"
 import EventListeners from './EventListeners.js'
 import TopSectionTemplate from './TopSectionTemplate.js'
@@ -25,7 +24,7 @@ async function start(){
     if(window.sessionStorage.activeUser) {
         TopSectionTemplate();
         TaskCardGenerator(data.tasks);
-        NewsTemplate();
+        NewsTemplate(data.news);
         EventListeners.setStandard();
     } else{
         renderLogin()

@@ -1,89 +1,32 @@
-export default function NewsTemplate() { 
+//Module by Brandon W. Responsible for iterating through news data to generate HTML string with each entry as well as field for adding new news article.
+
+export default function NewsTemplate(news){
+        let NewsTemplate = document.querySelector(".bottom-section")
+        NewsTemplate.innerHTML = ""
+        news.forEach(newsObj => {
+            NewsTemplate.innerHTML += newsConverter(newsObj)
+    })
+    NewsTemplate += newsInputField()
+}
+
+const newsConverter = (newsItem) => {
+    const newsHTML = 
+            `<div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <h5 class="card-title">${newsItem.title}</h5>
+                <p class="card-text">${newsItem.synopsis}</p>
+                <a href="#" class="btn purple-button">${newsItem.url}</a>
+            </div>
+            <div class="card-footer text-muted"></div>
+            </div>
+            <hr/>`
+            return newsHTML
+}
     
-        const bottomHTML = `<section class="bottom-section">
-            <!-- CONTAINER FOR FRIENDS LIST -->
-            <section class="friend-list">
-                <!-- INDIVIDUAL FRIEND ENTRIES -->
-                <div class="friend-entry">
-                    <div class="card text-center" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Friend Picture</h5>
-                            <p class="card-text">Friend Name</p>
-                            <p class="card-text">Friend Details</p>
-                        </div>
-                        </div>
-                </div>
-                <div class="friend-entry">
-                    <div class="card text-center" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Friend Picture</h5>
-                            <p class="card-text">Friend Name</p>
-                            <p class="card-text">Friend Details</p>
-                        </div>
-                        </div>
-                </div>
-                <div class="friend-entry">
-                    <div class="card text-center" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Friend Picture</h5>
-                            <p class="card-text">Friend Name</p>
-                            <p class="card-text">Friend Details</p> 
-                        </div>
-                        </div>
-                </div>
-                <div class="friend-entry">
-                    <div class="card text-center" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Friend Picture</h5>
-                            <p class="card-text">Friend Name</p>
-                            <p class="card-text">Friend Details</p>
-                        </div>
-                        </div>
-                </div>
-                <!-- BUTTON TO MANUALLY ADD FRIENDS BY SEARCHING FOR NAME -->
-                    <button type="button" class="btn purple-button btn-lg">Add Friend</button>
-            </section>
-
-            <!-- AREA THAT WILL EVENTUALLY CHANGE BASED ON USER SELECTION OF NEWS/EVENTS/CHAT -->
-            <section class="container">
-            <!-- SECTION FOR POPULATING NEWS ENTRIES -->
-            <section class="news-feed">
-                <!-- INDIVIDUAL NEWS ENTRY -->
-            <div class="card text-center">
-                <div class="card-header"></div>
-                <div class="card-body">
-                <h5 class="card-title">News Headline</h5>
-                <p class="card-text">Jean shorts bicycle rights proident kogi pork belly direct trade selfies enamel pin before they sold out. Health goth biodiesel edison bulb jean shorts brunch, ut bushwick 90's asymmetrical woke. Chambray stumptown brooklyn nostrud, pinterest kitsch aliqua hoodie fingerstache godard tousled.</p>
-                <a href="#" class="btn purple-button">URL</a>
-                </div>
-                <div class="card-footer text-muted"></div>
-            </div>
-            <hr/>
-
-            <div class="card text-center">
-                <div class="card-header"></div>
-                <div class="card-body">
-                <h5 class="card-title">News Headline</h5>
-                <p class="card-text">Cliche venmo veniam gluten-free viral marfa keffiyeh. Truffaut neutra quinoa kogi. Labore laborum fugiat raw denim velit snackwave. Pickled venmo minim heirloom taiyaki microdosing sustainable ex. Aliqua fashion axe disrupt labore sint helvetica narwhal asymmetrical shabby chic locavore occupy adaptogen raclette id lomo. </p>
-                <a href="#" class="btn purple-button">URL</a>
-                </div>
-                <div class="card-footer text-muted"></div>
-            </div>
-            <hr/>
-
-            <div class="card text-center">
-                <div class="card-header"></div>
-                <div class="card-body">
-                <h5 class="card-title">News Headline</h5>
-                <p class="card-text">Nisi pariatur edison bulb, mlkshk fashion axe crucifix YOLO leggings pok pok laborum. Actually hammock tousled lorem ipsum artisan, locavore thundercats occaecat tumblr irony gastropub fam hashtag. Quinoa qui poutine, af sed seitan ugh sriracha readymade viral lumbersexual synth celiac chambray.</p>
-                <a href="#" class="btn purple-button">URL</a>
-                </div>
-                <div class="card-footer text-muted"></div>
-            </div>
-            <hr/>
-            </section>
-
-            <!-- SECTION FOR CREATING NEW ARTICLE -->
+const newsInputField = () => {
+    const html =
+            `<!-- SECTION FOR CREATING NEW ARTICLE -->
             <section class="enter-new-article">
                 <h3 class="mx-auto" style="width: 300px">Create A News Article</h3>
                 <div class="input-group mb-3">
@@ -106,13 +49,7 @@ export default function NewsTemplate() {
                 </div>
                 <button type="button" class="btn gray-button float-right">Submit</button>
             </section>
-
             </section>
         `
-        console.log("rendering bottom html")
-        renderBottomSection(bottomHTML)
+        document.querySelector(".bottom-section").innerHTML += html
 }
-
- const renderBottomSection = (html) => {
-    document.querySelector(".bottom-section").innerHTML = html;
-    }
