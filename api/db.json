@@ -10,5 +10,10 @@
     ],
     "news":[
         {"test":"test"}
+    ],
+    "tasks":[
+        {"task":"Laundry"},
+        {"task":"Trash"},
+        {"task":"Park"}
     ]
 }

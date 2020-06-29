@@ -1,22 +1,19 @@
 {
-    "users": [
-        
+    "users":[
+        {"id":1,"name":"Anthony"}
     ],
-
-    "messages": [
-
+    "events":[
+        {"test":"test"}
     ],
-
-    "news": [
-
+    "comments":[
+        {"test":"test"}
     ],
-
-    "friends": [
-
+    "news":[
+        {"test":"test"}
     ],
-
-    "tasks": [
-        
+    "tasks":[
+        {"task":"Laundry"},
+        {"task":"Trash"},
+        {"task":"Park"}
     ]
-        
 }

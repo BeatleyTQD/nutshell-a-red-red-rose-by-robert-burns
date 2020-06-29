@@ -3,6 +3,7 @@ import navigation from './Navigation.js';
 const EventListeners = {
     setStandard(){
         this.setNavigation();
+
     },
     //login
 

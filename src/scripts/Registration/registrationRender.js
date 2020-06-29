@@ -1,3 +1,7 @@
+// Module made by Tyler H. and renders the registration page to the dom
+import {registrationFactory, loginEvents } from "../Login/login.js"
+
+// stores the registration HTML and returns it upon invocation
 const regisHTMLCreator = () => {
     return ` <div id="registration__wrapper">
     <img id="logo__img" src="images/NutshellV2.png" alt="Nutshell Logo" width="10%" height="10%">
@@ -28,10 +32,13 @@ const regisHTMLCreator = () => {
 </div>`
 }
 
+// renders the registration page to the dom and invokes the registration event listeners
 const renderRegis = () => {
     let regisHTMLRep = document.querySelector(".container-main")
     let regisHTML = regisHTMLCreator()
     regisHTMLRep.innerHTML = regisHTML
+    loginEvents.registerNewUser()
+    
 }
 
 export default renderRegis
