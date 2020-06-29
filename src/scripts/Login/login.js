@@ -44,7 +44,7 @@ let loginEvents = {
             
                                             </div>
                                             
-                                            <section class="bottom-section">
+                                            <section class="bottom-section container">
                                                 
                                             </section>`
             
@@ -84,7 +84,7 @@ let loginEvents = {
             
                                             </div>
                                             
-                                            <section class="bottom-section">
+                                            <section class="bottom-section container">
                                                 
                                             </section>`
             
@@ -151,7 +151,7 @@ let loginEvents = {
             
                                             </div>
                                             
-                                            <section class="bottom-section">
+                                            <section class="bottom-section container">
                                                 
                                             </section>`
             
@@ -218,7 +218,7 @@ let loginEvents = {
             
                                             </div>
                                             
-                                            <section class="bottom-section">
+                                            <section class="bottom-section container">
                                                 
                                             </section>`
             

@@ -2,6 +2,7 @@ import CommentsTemplate from '../scripts/Comments/CommentsTemplate.js';
 import EventsTemplate from '../scripts/Events/EventsTemplate.js';
 import NewsTemplate from '../scripts/News/NewsTemplate.js';
 import renderLogin from './Login/loginRender.js'
+import data from "./main.js"
 
 export default function navigation(e){
     e.preventDefault();
@@ -18,11 +19,11 @@ export default function navigation(e){
             break;
         case "events":
             console.log('Rendering Events')
-            EventsTemplate();
+            EventsTemplate(data.events);
             break;
         case "news":
             console.log("Rendering News")
-            NewsTemplate()
+            NewsTemplate(data.news)
             break;
         case "friends":
             console.log("Rendering Friends")
