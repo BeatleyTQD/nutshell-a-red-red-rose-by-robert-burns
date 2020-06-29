@@ -1,19 +1,40 @@
 {
-    "users":[
-        {"id":1,"name":"Anthony"}
-    ],
-    "events":[
-        {"test":"test"}
-    ],
-    "comments":[
-        {"test":"test"}
-    ],
-    "news":[
-        {"test":"test"}
-    ],
-    "tasks":[
-        {"task":"Laundry"},
-        {"task":"Trash"},
-        {"task":"Park"}
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Anthony"
+    },
+    {
+      "email": "me@me.com",
+      "username": "TestUser",
+      "password": "123",
+      "id": 2
+    }
+  ],
+  "events": [
+    {
+      "test": "test"
+    }
+  ],
+  "comments": [
+    {
+      "test": "test"
+    }
+  ],
+  "news": [
+    {
+      "test": "test"
+    }
+  ],
+  "tasks": [
+    {
+      "task": "Laundry"
+    },
+    {
+      "task": "Trash"
+    },
+    {
+      "task": "Park"
+    }
+  ]
 }
