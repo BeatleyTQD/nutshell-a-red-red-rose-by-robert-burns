@@ -5,14 +5,13 @@ import NewsTemplate from "./News/NewsTemplate.js";
 import TaskCardGenerator from "./Tasks/TaskCardGenerator.js"
 import API from './API.js'
 let data = {
-    user:{},
+    user: window.sessionStorage.activeUser,
     users:[],
     tasks:[],
     news:[],
     events:[],
     comments:[]
 }
-
 async function start(){
 
         data.users = await API.getUsers();
