@@ -44,7 +44,7 @@ let loginEvents = {
             
                                             
                             TopSectionTemplate()
-                            CommentsTemplate()
+                            CommentsTemplate(data.comments)
                             EventListeners.setStandard()
                             TaskCardGenerator(data.tasks);
         
@@ -78,7 +78,7 @@ let loginEvents = {
             
                                           
                         TopSectionTemplate()
-                        CommentsTemplate()
+                        CommentsTemplate(data.comments)
                         EventListeners.setStandard()
                         TaskCardGenerator(data.tasks);
     
@@ -140,7 +140,7 @@ let loginEvents = {
                                            
             
                                             TopSectionTemplate()
-                                            CommentsTemplate()
+                                            CommentsTemplate(data.comments)
                                             EventListeners.setStandard()
                                             TaskCardGenerator(data.tasks);
                                            }
@@ -202,7 +202,7 @@ let loginEvents = {
             
             
                                             TopSectionTemplate()
-                                            CommentsTemplate()
+                                            CommentsTemplate(data.comments)
                                             EventListeners.setStandard()
                                             TaskCardGenerator(data.tasks);
                                            }
