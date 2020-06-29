@@ -1,40 +1,67 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Anthony"
-    },
-    {
       "email": "me@me.com",
       "username": "TestUser",
       "password": "123",
-      "id": 2
+      "id": 1
     }
   ],
   "events": [
     {
-      "test": "test"
+      "id": 1,
+      "userId": 1,
+      "name": "Meet up",
+      "date": "06/30/2020",
+      "location": "NSS"
     }
   ],
   "comments": [
     {
-      "test": "test"
+      "id": 1,
+      "userId": 1,
+      "message": "What's up?"
     }
   ],
   "news": [
     {
-      "test": "test"
+      "id": 1,
+      "userId": 1,
+      "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
+      "title":"Wormholes Allow Information to Escape Black Holes",
+      "synopsis": "Check out this recent discovery about workholes"
+
     }
   ],
   "tasks": [
     {
-      "task": "Laundry"
+      "id": 1,
+      "userId": 1,
+      "task": "Laundry",
+      "date": "06/29/2020",
+      "completed": false
     },
     {
-      "task": "Trash"
+      "id": 2,
+      "userId": 1,
+      "task": "Trash",
+      "date": "06/29/2020",
+      "completed": true
     },
     {
-      "task": "Park"
+      "id": 3,
+      "userId": 1,
+      "task": "Park",
+      "date": "06/29/2020",
+      "completed": false
     }
+  ],
+  "friends": [
+      {
+        "id": 1, 
+        "userId": 1, 
+        "following": 3
+      }
+      
   ]
 }
