@@ -30,6 +30,11 @@ export default function navigation(e){
         case "users":
             console.log("Rendering Users")
             break;
+        case "logout":
+            console.log("Logout")
+            renderLogin()
+            window.sessionStorage.removeItem("activeUser")
+            break;
         default:
             console.log("Error Results not found", value,name, target)
             break;

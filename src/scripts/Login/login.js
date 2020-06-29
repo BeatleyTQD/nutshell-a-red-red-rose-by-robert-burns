@@ -40,13 +40,7 @@ let loginEvents = {
                         if(password === user.password) {
                             passwordCheck = true
                             window.sessionStorage.setItem("activeUser", user.id)
-                            document.querySelector(".container-main").innerHTML =`<div class="top-sec-container">
-            
-                                            </div>
-                                            
-                                            <section class="bottom-section">
-                                                
-                                            </section>`
+                            document.querySelector(".top-sec-container").innerHTML = ""
             
                                             
                             TopSectionTemplate()
@@ -80,13 +74,7 @@ let loginEvents = {
                     if(password === user.password) {
                         passwordCheck = true
                         window.sessionStorage.setItem("activeUser", user.id)
-                        document.querySelector(".container-main").innerHTML =`<div class="top-sec-container">
-            
-                                            </div>
-                                            
-                                            <section class="bottom-section">
-                                                
-                                            </section>`
+                        document.querySelector(".top-sec-container").innerHTML =""
             
                                           
                         TopSectionTemplate()
@@ -147,13 +135,9 @@ let loginEvents = {
                                        for(let user of response) {
                                            if(user.username === username) {
                                             window.sessionStorage.setItem("activeUser", user.id )
-                                            document.querySelector(".container-main").innerHTML =`<div class="top-sec-container">
+                                            document.querySelector(".top-sec-container").innerHTML = ""
             
-                                            </div>
-                                            
-                                            <section class="bottom-section">
-                                                
-                                            </section>`
+                                           
             
                                             TopSectionTemplate()
                                             CommentsTemplate()
@@ -214,13 +198,8 @@ let loginEvents = {
                                        for(let user of response) {
                                            if(user.username === username) {
                                             window.sessionStorage.setItem("activeUser", user.id )
-                                            document.querySelector(".container-main").innerHTML =`<div class="top-sec-container">
+                                            document.querySelector(".top-sec-container").innerHTML = ""
             
-                                            </div>
-                                            
-                                            <section class="bottom-section">
-                                                
-                                            </section>`
             
                                             TopSectionTemplate()
                                             CommentsTemplate()
