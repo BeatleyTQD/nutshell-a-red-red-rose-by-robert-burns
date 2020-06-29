@@ -21,21 +21,10 @@
   ],
   "comments": [
     {
-      "test": "test",
-      "userId":2
-    },
-    {
-        "test": "test",
-        "userId":1
-      },
-      {
-        "test": "test",
-        "userId":2
-      },
-      {
-        "test": "test",
-        "userId":3
-      }
+        "id": 1,
+        "userId": 1,
+        "message": "What's up?"  
+    }
   ],
   "news": [
     {
