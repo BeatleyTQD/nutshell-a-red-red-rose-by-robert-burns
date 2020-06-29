@@ -1,5 +1,4 @@
-import eventsConverter from "./Events/EventsHTMLFactory.js"
-import renderRegis from "./Registration/registrationRender.js"
+
 import renderLogin from "./Login/loginRender.js"
 import EventListeners from './EventListeners.js'
 import TopSectionTemplate from './TopSectionTemplate.js'
@@ -24,11 +23,10 @@ async function start(){
    data.comments = await API.getComments();
     console.log(data, "Rendering All Data");
     if(window.sessionStorage.activeUser) {
-       
-    TopSectionTemplate();
-    TaskCardGenerator(data.tasks);
-    NewsTemplate();
-    EventListeners.setStandard();
+        TopSectionTemplate();
+        TaskCardGenerator(data.tasks);
+        NewsTemplate();
+        EventListeners.setStandard();
     } else{
         renderLogin()
     }

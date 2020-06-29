@@ -41,6 +41,11 @@ export default function TopSectionTemplate(){
                           Friends
                         </a>
                       </li>
+                      <li id="nav"  class="nav-item">
+                        <a name="logout" class="nav-link " href="#">
+                          Logout
+                        </a>
+                      </li>
                       
                     </ul>
         
@@ -75,6 +80,7 @@ export default function TopSectionTemplate(){
                 </div>
             </div>
         </div>
+
 
     </section> 
  </div>
