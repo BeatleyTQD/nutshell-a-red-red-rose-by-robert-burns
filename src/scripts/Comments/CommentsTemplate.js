@@ -39,7 +39,7 @@ export default function CommentsTemplate(){
             </div>
     </div>
     <!-- BUTTON TO MANUALLY ADD FRIENDS BY SEARCHING FOR NAME -->
-        <button type="button" class="btn gray-button btn-lg">Add Friend</button>
+        <button type="button" class="btn gray-button btn-lg">Add Friend\</button>
 </section>
     <section class="container">
         <div class="card text-center">

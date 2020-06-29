@@ -13,7 +13,6 @@ let data = {
     events:[],
     comments:[]
 }
-// renderLogin()
 
 async function start(){
 
@@ -30,5 +29,6 @@ async function start(){
   
 }
 
+start()
 
 export default data;
