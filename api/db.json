@@ -1,49 +1,156 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Anthony"
-    },
-    {
       "email": "me@me.com",
       "username": "TestUser",
       "password": "123",
+      "id": 1
+    },
+    {
+      "email": "dan@me.com",
+      "username": "danTheMan",
+      "password": "123",
       "id": 2
+    },
+    {
+      "email": "adj1@t.com",
+      "username": "danny boy",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "email": "adj2@e.com",
+      "username": "Munster",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "email": "adj4@t.com",
+      "username": "Billy Boy",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "email": "a@a",
+      "username": "Cassandra",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "email": "a@a",
+      "username": "2Cool4School",
+      "password": "123",
+      "id": 7
     }
   ],
   "events": [
     {
-      "name": "test",
-      "date": "date",
-      "location": "location",
-      "synopsis": "synopsis"
+      "id": 1,
+      "userId": 1,
+      "name": "Meet up",
+      "date": "06/30/2020",
+      "location": "NSS"
     }
   ],
   "comments": [
     {
-        "id": 1,
-        "userId": 1,
-        "message": "What's up?"  
+      "id": 1,
+      "userId": 1,
+      "message": "What's up?"
     }
   ],
   "news": [
     {
-        "id": 1,
-        "userId": 2,
-        "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
-        "title": "Wormholes Allow Information to Escape Black Holes",
-        "synopsis": "Check out this recent discovery about workholes"
+      "id": 1,
+      "userId": 1,
+      "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
+      "title": "Wormholes Allow Information to Escape Black Holes",
+      "synopsis": "Check out this recent discovery about workholes"
     }
   ],
   "tasks": [
     {
-      "task": "Laundry"
+      "id": 1,
+      "userId": 1,
+      "task": "Laundry",
+      "date": "06/29/2020",
+      "completed": false
     },
     {
-      "task": "Trash"
+      "id": 2,
+      "userId": 1,
+      "task": "Trash",
+      "date": "06/29/2020",
+      "completed": true
     },
     {
-      "task": "Park"
+      "id": 3,
+      "userId": 1,
+      "task": "Park",
+      "date": "06/29/2020",
+      "completed": false
+    },
+    {
+      "userId": "3",
+      "task": "Another one",
+      "date": "2020-06-30T13:44:23.654Z",
+      "complete": false,
+      "id": 5
+    },
+    {
+      "userId": "3",
+      "task": "And Another one",
+      "date": "2020-06-30T13:44:23.654Z",
+      "complete": true,
+      "id": 7
+    },
+    {
+      "userId": "3",
+      "task": "Feed the Kids",
+      "date": "2020-06-30T18:54:53.850Z",
+      "complete": false,
+      "id": 9
+    },
+    {
+      "userId": "3",
+      "task": "Do more",
+      "date": "2020-06-30T18:56:27.180Z",
+      "complete": true,
+      "id": 10
+    },
+    {
+      "userId": "3",
+      "task": "Do Home work",
+      "date": "2020-06-30T18:58:28.450Z",
+      "complete": false,
+      "id": 11
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "activeUser": 3,
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "activeUser": 1,
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "activeUser": 3,
+      "userId": 5
+    },
+    {
+      "id": 5,
+      "activeUser": 3,
+      "userId": 6
+    },
+    {
+      "id": 6,
+      "activeUser": 1,
+      "userId": 7
     }
   ]
 }

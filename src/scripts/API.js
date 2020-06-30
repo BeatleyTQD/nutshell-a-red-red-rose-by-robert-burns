@@ -42,7 +42,7 @@ const API = {
     },
 
     deleteUser(id){
-        return fetch(`${url}${id}`, {
+        return fetch(`${url}users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -52,6 +52,11 @@ const API = {
         .then(GlobalSuccess)
         .then(GlobalError)
     },
+    searchUsers(search){
+        return fetch(`${url}users?username_like=${search}`)
+        .then(res=>res.json())
+        .then(res=>res)
+    },
 
     // Tasks //
     getTasks(){
@@ -59,6 +64,33 @@ const API = {
         .then(res=>res.json())
         .then(res=>res)
         .catch(GlobalError);
+    },
+    addTask(data){
+        return fetch(`${url}tasks`, {
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+              },
+            body: JSON.stringify(data)
+        })
+    },
+    deleteTask(id){
+        return fetch(`${url}tasks/${id}`,{
+            method:'DELETE',
+            headers: {
+                'Content-Type' : 'application/json'
+            }
+        })
+    },
+    updateTask(data, id){
+        return fetch(`${url}tasks/${id}`, {
+            method: "PUT", 
+            headers: {
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(data)
+        })
     },
 
     // News //
@@ -80,8 +112,29 @@ const API = {
         return fetch(`${url}comments`)
         .then(res=>res.json())
         .then(res=>res)
+    },
+    deleteComments(id){
+        return fetch(`${url}comments/${id}`, {
+            method:"DELETE",
+            headers: {
+                'Content-Type': 'application/json'
+              }
+        })
+    },
+    //Friends //
+    getFriends(id){
+        return fetch(`${url}friends?activeUser=${id}&_expand=user`)
+        .then(res=> res.json())
+        .then(res=>res)
+    },
+    unfollowFriend(id){
+        return fetch(`${url}friends/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type":"application/json"
+            }
+        })
     }
-
 }
 
 
