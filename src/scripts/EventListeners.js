@@ -1,4 +1,5 @@
 import navigation from './Navigation.js';
+import deleteNewsHandler from './News/newsEventHandler.js';
 
 const EventListeners = {
     setStandard(){
@@ -15,7 +16,7 @@ const EventListeners = {
         navLinks.forEach(link=>{
             link.addEventListener('click', navigation)
         })
-    }
+    },
     //dashboard
 
     //tasks
@@ -27,6 +28,15 @@ const EventListeners = {
     //comments
 
     //events
+    setNewsDelete(){
+        let newsDelete = document.querySelectorAll("delete-news-btn")
+        newsDelete.forEach(btn => {
+            btn.addEventListener("click", deleteNews => {
+                let id = deleteNews.target.name
+                deleteNewsHandler(id)
+            })
+        })
+    }
 
     //users
 

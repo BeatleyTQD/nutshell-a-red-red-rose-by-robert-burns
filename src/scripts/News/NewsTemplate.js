@@ -17,6 +17,7 @@ const newsConverter = (newsItem) => {
                 <h5 class="card-title">${newsItem.title}</h5>
                 <p class="card-text">${newsItem.synopsis}</p>
                 <a href="#" class="btn purple-button">${newsItem.url}</a>
+                ${newsItem.userId == window.sessionStorage.activeUser ? `<button type="button" class="btn-outline-danger" name=${newsItem.id} id="delete-news-btn">Delete</button>` : ""}
             </div>
             <div class="card-footer text-muted"></div>
             </div>
@@ -24,7 +25,8 @@ const newsConverter = (newsItem) => {
             return newsHTML
 }
     
-const newsInputField = (obj) => {
+const newsInputField = (newsItem) => {
+    console.log(window.sessionStorage.activeUser)
     const html =
             `<!-- SECTION FOR CREATING NEW ARTICLE -->
             <section class="enter-new-article">
@@ -48,7 +50,6 @@ const newsInputField = (obj) => {
                 <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                 </div>
                 <button type="button" class="btn gray-button float-right">Submit</button>
-                ${obj.userId == window.sessionStorage.activeUser ? `<button type="button" name=${obj.id} id="delete-news-btn">Delete</button>` : ""}
             </section>
             </section>
         `

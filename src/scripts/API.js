@@ -67,13 +67,23 @@ const API = {
         .then(res=>res.json())
         .then(res=>res)
     },
-
+    deleteNews(id){
+        return fetch(`${url}news/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+              }
+        })
+        .then(GlobalSuccess)
+        .then(GlobalError)
+    },
     // Events //
     getEvents(){
         return fetch(`${url}events`)
         .then(res=>res.json())
         .then(res=>res)
     },
+
 
     // Comments //
     getComments(){
