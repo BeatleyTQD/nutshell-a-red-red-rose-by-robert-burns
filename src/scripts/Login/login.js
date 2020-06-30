@@ -44,7 +44,7 @@ let loginEvents = {
             
                                             
                             TopSectionTemplate()
-                            CommentsTemplate(data.comments)
+                            CommentsTemplate()
                             EventListeners.setStandard()
                             TaskCardGenerator(data.tasks);
         
@@ -78,7 +78,7 @@ let loginEvents = {
             
                                           
                         TopSectionTemplate()
-                        CommentsTemplate(data.comments)
+                        CommentsTemplate()
                         EventListeners.setStandard()
                         TaskCardGenerator(data.tasks);
     
@@ -140,7 +140,7 @@ let loginEvents = {
                                            
             
                                             TopSectionTemplate()
-                                            CommentsTemplate(data.comments)
+                                            CommentsTemplate()
                                             EventListeners.setStandard()
                                             TaskCardGenerator(data.tasks);
                                            }
@@ -199,10 +199,8 @@ let loginEvents = {
                                            if(user.username === username) {
                                             window.sessionStorage.setItem("activeUser", user.id )
                                             document.querySelector(".top-sec-container").innerHTML = ""
-            
-            
                                             TopSectionTemplate()
-                                            CommentsTemplate(data.comments)
+                                            CommentsTemplate()
                                             EventListeners.setStandard()
                                             TaskCardGenerator(data.tasks);
                                            }
@@ -216,9 +214,6 @@ let loginEvents = {
                             
                             window.alert("Invalid Email")
                         }
-                        
-                        
-                        
                         
                     }else{
                         window.alert("Username is already in taken")
