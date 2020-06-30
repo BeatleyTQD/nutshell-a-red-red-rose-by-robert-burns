@@ -7,7 +7,7 @@ import FriendTemplate from "./Friends/FriendTemplate.js";
 import API from './API.js'
 
 let data = {
-    user: window.sessionStorage.activeUser,
+    user: "",
     users:[],
     tasks:[],
     news:[],
@@ -16,12 +16,12 @@ let data = {
     friends:[]
 }
 async function start(){
-
+   data.user = window.sessionStorage.activeUser
    data.users = await API.getUsers();
-   data.tasks = await API.getTasks();
-   data.news = await API.getNews(window.sessionStorage.activeUser);
-   data.events = await API.getEvents(window.sessionStorage.activeUser);
-   data.comments = await API.getComments();
+   data.tasks = await API.getTasks(window.sessionStorage.activeUser)
+   data.news = await API.getNews(window.sessionStorage.activeUser)
+   data.events = await API.getEvents(window.sessionStorage.activeUser)
+   data.comments = await API.getComments(window.sessionStorage.activeUser)
    data.friends = await API.getFriends(data.user);
    
     if(window.sessionStorage.activeUser) {

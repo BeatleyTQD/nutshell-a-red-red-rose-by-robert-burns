@@ -1,6 +1,13 @@
 import data from './main.js'
 
 export default function TopSectionTemplate(){
+  let filteredTasks = data.tasks.filter(task=> {
+    if(task.complete){
+      return true
+    }else {
+      return false
+    }
+  })
     let html =  `
     <div class="tp-container">
     <div class=" text-center header " style="height: 100px;">
@@ -28,17 +35,7 @@ export default function TopSectionTemplate(){
                       </li>
                       <li id="nav" class="nav-item">
                         <a name="comments" class="nav-link " href="#">
-                          Comments
-                        </a>
-                      </li>
-                      <li id="nav" class="nav-item">
-                        <a name="users" class="nav-link " href="#">
-                          Users
-                        </a>
-                      </li>
-                      <li id="nav"  class="nav-item">
-                        <a name="friends" class="nav-link " href="#">
-                          Friends
+                          Chat Room
                         </a>
                       </li>
                       <li id="nav"  class="nav-item">
@@ -62,7 +59,7 @@ export default function TopSectionTemplate(){
                     <div class="stats text-right">
                    <div class="tasks text-right">
                        <h3>Friends: 0</h3>
-                       <h3>Tasks: ${data.tasks.length}</h3>
+                       <h3>Tasks: ${filteredTasks.length}</h3>
                        <h3>Events: 0</h3>
                    </div>
                 </div>

@@ -13,12 +13,12 @@ const taskEventHandlers = {
     var proceed = confirm("Are you sure you want to proceed?");
 if (proceed) {
   let id = e.target.name;
-       data.tasks = await API.getTasks();
+       data.tasks = await API.getTasks(window.sessionStorage.activeUser);
        let current = filterFunction(data.tasks, id)
        console.log(current);
        current.complete = true;
       await API.updateTask(current, id);
-     let arr = await API.getTasks();
+     let arr = await API.getTasks(window.sessionStorage.activeUser);
      TaskCardGenerator(arr);
         console.log('Task Complete')
 } else {
@@ -30,14 +30,14 @@ if (proceed) {
    async addTask(e){
     newTask.userId = data.user
       await API.addTask(newTask);
-     let arr = await API.getTasks();
+     let arr = await API.getTasks(window.sessionStorage.activeUser);
      TaskCardGenerator(arr);  
     },
    async deleteTask(e){
     var proceed = confirm("Are you sure you want to Delete task?");
     if (proceed) {
         await API.deleteTask(e.target.name)
-        let arr = await API.getTasks();
+        let arr = await API.getTasks(window.sessionStorage.activeUser);
         TaskCardGenerator(arr);
     } else {
       console.log("Do not delete")

@@ -17,7 +17,7 @@ const saveEventHandler = (obj) => {
     let description = document.querySelector("#description-event-input").value
 
     
-    API.saveEvents(eventFactory(title, date, location, description)).then(() => API.getEvents()).then((response) => {
+    API.saveEvents(eventFactory(title, date, location, description)).then(() => API.getEvents(data.user)).then((response) => {
         
         data.events = response
         EventsTemplate(response.sort((a, b) => Date.parse(a.date) - Date.parse(b.date)))

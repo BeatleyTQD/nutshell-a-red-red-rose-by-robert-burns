@@ -6,9 +6,12 @@ export default function EventsTemplate(events){
         events.forEach(event => {
         EventsTemplate.innerHTML += eventsConverter(event)
     })
-    let firstPost = document.querySelector(".card-body")
+    let firstPost = document.querySelector(".card-body-event")
+    
     if(events != ""){
         firstPost.classList = "firstPost"
+      
+        
     }
     EventsTemplate += eventsInputField()
     EventListeners.setEventDelete()
@@ -22,7 +25,7 @@ const eventsConverter = (eventsItem) => {
     let eventsHTML = 
     `<div class="card text-center">
     <div class="card-header"></div>
-    <div class="card-body">
+    <div class="card-body-event">
     <h5 class="card-title">${eventsItem.name}</h5>
     <h6 class="card-subtitle mb-2 text-muted">${month}-${day}-${year}</h6>
     <h6 class="card-subtitle mb-2 text-muted">${eventsItem.location}</h6>
