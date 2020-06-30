@@ -29,6 +29,14 @@
       "location": "NSS",
       "description": "A cook out with the buds.",
       "id": 2
+    },
+    {
+      "userId": "1",
+      "name": "party",
+      "date": "2020-07-01",
+      "location": "here",
+      "description": "yo",
+      "id": 3
     }
   ],
   "comments": [

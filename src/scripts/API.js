@@ -67,6 +67,7 @@ const API = {
         .then(res=>res.json())
         .then(res=>res)
     },
+    //deletes user selected news article from the database
     deleteNews(id){
         return fetch(`${url}news/${id}`, {
             method: 'DELETE',
@@ -77,6 +78,7 @@ const API = {
         .then(GlobalSuccess)
         .then(GlobalError)
     },
+    //saves a user submitted news article to the database
     saveNews(data){
         return fetch(`${url}news`, {
             method:'POST',
