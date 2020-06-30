@@ -32,6 +32,7 @@ const renderLogin = () => {
     let loginHTMLRep = document.querySelector(".top-sec-container")
     let bottomClear = document.querySelector(".bottom-section")
     let friendClear = document.querySelector(".friend-list")
+    friendClear.innerHTML = ""
     bottomClear.innerHTML = ""
     loginHTMLRep.innerHTML = ""
     let loginHTML = loginHTMLCreator()
