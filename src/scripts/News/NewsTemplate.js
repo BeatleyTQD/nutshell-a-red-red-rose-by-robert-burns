@@ -29,7 +29,6 @@ const newsConverter = (newsItem) => {
 }
     
 const newsInputField = (newsItem) => {
-    console.log(window.sessionStorage.activeUser)
     const html =
             `<!-- SECTION FOR CREATING NEW ARTICLE -->
             <section class="enter-new-article">
