@@ -18,7 +18,7 @@ async function start(){
         data.users = await API.getUsers();
    data.tasks = await API.getTasks();
    data.news = await API.getNews();
-   data.events = await API.getEvents();
+   data.events = await API.getEvents(window.sessionStorage.activeUser);
    data.comments = await API.getComments();
     console.log(data, "Rendering All Data");
     if(window.sessionStorage.activeUser) {

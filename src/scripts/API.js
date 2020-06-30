@@ -96,10 +96,13 @@ const API = {
         .catch(GlobalError)
     },
     // Events //
-    getEvents(){
-        return fetch(`${url}events`)
+    getEvents(id){
+        return fetch(`${url}events?userId=${id}`)
         .then(res=>res.json())
-        .then(res=>res)
+        .then((res) => {
+            data.news = res
+            return res
+        })
     },
 
     deleteEvent(id){

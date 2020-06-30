@@ -7,19 +7,24 @@ export default function EventsTemplate(events){
         EventsTemplate.innerHTML += eventsConverter(event)
     })
     let firstPost = document.querySelector(".card-body")
-    firstPost.classList = "firstPost"
+    if(events != ""){
+        firstPost.classList = "firstPost"
+    }
     EventsTemplate += eventsInputField()
     EventListeners.setEventDelete()
     EventListeners.setEventSave()
 }
 
 const eventsConverter = (eventsItem) => {
+    let month = eventsItem.date.split("-")[1]
+    let day = eventsItem.date.split("-")[2]
+    let year = eventsItem.date.split("-")[0]
     let eventsHTML = 
     `<div class="card text-center">
     <div class="card-header"></div>
     <div class="card-body">
     <h5 class="card-title">${eventsItem.name}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">${eventsItem.date}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">${month}-${day}-${year}</h6>
     <h6 class="card-subtitle mb-2 text-muted">${eventsItem.location}</h6>
     <p class="card-text">${eventsItem.description}</p>
     ${eventsItem.userId == window.sessionStorage.activeUser ? `<button type="button" name=${eventsItem.id} id="delete-events-btn"class="btn btn-outline-danger">Delete</button>`: ""}

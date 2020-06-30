@@ -11,32 +11,46 @@
       "username": "TestUser2",
       "password": "123",
       "id": 2
+    },
+    {
+      "email": "me@me3.com",
+      "username": "TestUser3",
+      "password": "123",
+      "id": 3
     }
   ],
   "events": [
     {
-      "id": 1,
       "userId": 1,
-      "name": "Meet up",
-      "date": "06/30/2020",
-      "location": "NSS",
-      "description": "A get together for Cohort 41."
+      "name": "afdafa",
+      "date": "2020-06-19",
+      "location": "adsadf",
+      "description": "afadsf",
+      "id": 1
     },
     {
-      "userId": "1",
-      "name": "Grill out",
-      "date": "06/30/2020",
-      "location": "NSS",
-      "description": "A cook out with the buds.",
-      "id": 2
-    },
-    {
-      "userId": "1",
-      "name": "party",
-      "date": "2020-07-01",
-      "location": "here",
-      "description": "yo",
+      "userId": 2,
+      "name": "asf",
+      "date": "2020-06-10",
+      "location": "safsf",
+      "description": "asfasf",
       "id": 3
+    },
+    {
+      "userId": 1,
+      "name": "123",
+      "date": "2020-06-11",
+      "location": "123",
+      "description": "123",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "name": "123",
+      "date": "2020-06-11",
+      "location": "123",
+      "description": "123",
+      "id": 5
     }
   ],
   "comments": [
@@ -97,14 +111,19 @@
   ],
   "friends": [
     {
-      "id": 2,
-      "activeUser": 2,
+      "id": 1,
+      "activeUserId": 1,
       "userId": 2
     },
     {
-      "id": 4,
-      "activeUser": 2,
-      "userId": 2
+      "id": 2,
+      "activeUserId": 2,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "activeUserId": 1,
+      "userId": 3
     }
   ]
 }

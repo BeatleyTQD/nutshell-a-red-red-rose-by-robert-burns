@@ -1,6 +1,6 @@
 const eventFactory = (title, date, location, description) => {
     return {
-        "userId": window.sessionStorage.activeUser,
+        "userId": parseInt(window.sessionStorage.activeUser),
         "name": title,
         "date": date,
         "location": location,
