@@ -36,6 +36,8 @@ export default function navigation(e){
             console.log("Logout")
             renderLogin()
             window.sessionStorage.removeItem("activeUser")
+            let friendClear = document.querySelector(".friend-list")
+            friendClear.innerHTML = ""
             break;
         default:
             console.log("Error Results not found", value,name, target)
