@@ -19,12 +19,14 @@ const saveNewsHandler = (obj) => {
     const newsTitleInput = document.querySelector("#title-news-input").value
     const newsSynopsisInpupt = document.querySelector("#synopsis-news-input").value
     const newsURLInput= document.querySelector("#url-news-input").value
+    if (newsTitleInput !== "" || newsSynopsisInpupt !== "" || newsURLInput !== ""){
     //takes variables above, passes them in to create a new entry, fetches and displays updated data set
     API.saveNews(newsFactory(newsTitleInput, newsSynopsisInpupt, newsURLInput))
     .then(() => API.getNews())
     .then((response) => {
         NewsTemplate(response.sort((a,b)=>b.time-a.time))
     })
+    } else (alert("Please fill out entire form!"))
 }
 
 export {deleteNewsHandler, saveNewsHandler}
