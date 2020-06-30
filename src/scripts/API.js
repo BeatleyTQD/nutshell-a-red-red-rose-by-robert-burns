@@ -1,3 +1,5 @@
+import data from "./main.js"
+
 const url = 'http://localhost:8088/'
 /**
  * users/articles/events/tasks/friends/messages
@@ -69,10 +71,13 @@ const API = {
     },
 
     // Events //
-    getEvents(){
-        return fetch(`${url}events`)
+    getEvents(id){
+        return fetch(`${url}events?userId=${id}`)
         .then(res=>res.json())
-        .then(res=>res)
+        .then((res) => {
+            data.news = res
+            return res
+        })
     },
 
     deleteEvent(id){

@@ -4,9 +4,9 @@ import EventsTemplate from "./EventsTemplate.js"
 import eventFactory from "./eventFactory.js"
 
 const deleteEventHandler = (id) => {
-    API.deleteEvent(id).then(() => API.getEvents()).then((response) => {
+    API.deleteEvent(id).then(() => API.getEvents(data.user)).then((response) => {
         data.events = response
-        EventsTemplate(response)
+        EventsTemplate(response.sort((a, b) => Date.parse(a.date) - Date.parse(b.date)))
     })
 }
 
@@ -20,7 +20,7 @@ const saveEventHandler = (obj) => {
     API.saveEvents(eventFactory(title, date, location, description)).then(() => API.getEvents()).then((response) => {
         
         data.events = response
-        EventsTemplate(response)
+        EventsTemplate(response.sort((a, b) => Date.parse(a.date) - Date.parse(b.date)))
     })
 }
 
