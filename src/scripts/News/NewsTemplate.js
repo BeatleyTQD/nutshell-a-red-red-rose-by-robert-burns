@@ -1,4 +1,5 @@
 //Module by Brandon W. Responsible for iterating through news data to generate HTML string with each entry as well as field for adding new news article.
+import EventListeners from "../EventListeners.js"
 
 export default function NewsTemplate(news){
         let NewsTemplate = document.querySelector(".bottom-section")
@@ -7,6 +8,8 @@ export default function NewsTemplate(news){
             NewsTemplate.innerHTML += newsConverter(newsObj)
     })
     NewsTemplate += newsInputField(news)
+    EventListeners.setNewsDelete()
+    EventListeners.setNewsSave()
 }
 
 const newsConverter = (newsItem) => {
@@ -16,8 +19,8 @@ const newsConverter = (newsItem) => {
             <div class="card-body">
                 <h5 class="card-title">${newsItem.title}</h5>
                 <p class="card-text">${newsItem.synopsis}</p>
-                <a href="#" class="btn purple-button">${newsItem.url}</a>
-                ${newsItem.userId == window.sessionStorage.activeUser ? `<button type="button" class="btn-outline-danger" name=${newsItem.id} id="delete-news-btn">Delete</button>` : ""}
+                <a href="http://${newsItem.url}" class="btn purple-button">URL</a>
+                <div>${newsItem.userId == window.sessionStorage.activeUser ? `<button type="button" class="btn-outline-danger" name=${newsItem.id} id="delete-news-btn">Delete</button>` : ""}</div>
             </div>
             <div class="card-footer text-muted"></div>
             </div>

@@ -1,3 +1,5 @@
+import data from "./main.js"
+
 const url = 'http://localhost:8088/'
 /**
  * users/articles/events/tasks/friends/messages
@@ -63,9 +65,12 @@ const API = {
 
     // News //
     getNews(){
-        return fetch(`${url}news`)
+        return fetch(`${url}news?userId=${window.sessionStorage.activeUser}`)
         .then(res=>res.json())
-        .then(res=>res)
+        .then((res) => {
+            data.news = res
+            return res
+        })
     },
     //deletes user selected news article from the database
     deleteNews(id){

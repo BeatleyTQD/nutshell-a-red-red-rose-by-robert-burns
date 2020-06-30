@@ -24,7 +24,7 @@ async function start(){
     if(window.sessionStorage.activeUser) {
         TopSectionTemplate();
         TaskCardGenerator(data.tasks);
-        NewsTemplate(data.news);
+        NewsTemplate(data.news.sort((a,b)=>b.time-a.time));
         EventListeners.setStandard();
     } else{
         renderLogin()

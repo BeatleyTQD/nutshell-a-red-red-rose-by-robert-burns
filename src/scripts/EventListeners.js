@@ -37,8 +37,8 @@ const EventListeners = {
     setNewsSave(){
         let newsSave = document.querySelectorAll("#save-news-btn")
         newsSave.forEach(btn => {
-            btn.addEventListener("click", saveEvent => {
-                let id=saveNews.target.name
+            btn.addEventListener("click", saveNews => {
+                let id = saveNews.target.name
                 saveNewsHandler(id)
             })
         })

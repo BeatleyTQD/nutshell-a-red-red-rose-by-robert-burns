@@ -9,20 +9,21 @@ const deleteNewsHandler = (id) => {
     API.deleteNews(id)
     .then(() => API.getNews())
     .then((response) =>{
-        NewsTemplate(response)
+        NewsTemplate(response.sort((a,b)=>b.time-a.time))
     })
 }
 
 
-const saveNewsHandler = () => {
+const saveNewsHandler = (obj) => {
     //Obtains and stores user submitted data into variables to be passed into the news factory function
     const newsTitleInput = document.querySelector("#title-news-input").value
     const newsSynopsisInpupt = document.querySelector("#synopsis-news-input").value
     const newsURLInput= document.querySelector("#url-news-input").value
     //takes variables above, passes them in to create a new entry, fetches and displays updated data set
     API.saveNews(newsFactory(newsTitleInput, newsSynopsisInpupt, newsURLInput))
+    .then(() => API.getNews())
     .then((response) => {
-        NewsTemplate(response)
+        NewsTemplate(response.sort((a,b)=>b.time-a.time))
     })
 }
 

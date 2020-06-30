@@ -21,14 +21,10 @@ export default function navigation(e){
         case "events":
             console.log('Rendering Events')
             EventsTemplate(data.events);
-            EventListeners.setEventDelete()
-            EventListeners.setEventSave()
             break;
         case "news":
             console.log("Rendering News")
-            NewsTemplate(data.news)
-            EventListeners.setNewsDelete()
-            EventListeners.setNewsSave()
+            NewsTemplate(data.news.sort((a,b)=>b.time-a.time))
             break;
         case "friends":
             console.log("Rendering Friends")
