@@ -77,6 +77,17 @@ const API = {
         .then(GlobalSuccess)
         .then(GlobalError)
     },
+    saveNews(data){
+        return fetch(`${url}news`, {
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+        })
+        .then(GlobalSuccess)
+        .catch(GlobalError)
+    },
     // Events //
     getEvents(){
         return fetch(`${url}events`)

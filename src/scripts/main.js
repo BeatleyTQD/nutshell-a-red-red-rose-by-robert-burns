@@ -4,6 +4,7 @@ import TopSectionTemplate from './TopSectionTemplate.js';
 import NewsTemplate from "./News/NewsTemplate.js";
 import TaskCardGenerator from "./Tasks/TaskCardGenerator.js"
 import API from './API.js'
+
 let data = {
     user: window.sessionStorage.activeUser,
     users:[],

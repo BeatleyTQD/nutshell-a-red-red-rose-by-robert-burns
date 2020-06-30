@@ -27,6 +27,8 @@ export default function navigation(e){
         case "news":
             console.log("Rendering News")
             NewsTemplate(data.news)
+            EventListeners.setNewsDelete()
+            EventListeners.setNewsSave()
             break;
         case "friends":
             console.log("Rendering Friends")

@@ -35,21 +35,21 @@ const newsInputField = (newsItem) => {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Headline</span>
                 </div>
-                <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="text" id="title-news-input" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                 </div>
                 <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Synopsis</span>
                 </div>
-                <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="text" id="synopsis-news-input" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                 </div>
                 <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">&nbsp;&nbsp;&nbsp;&nbsp;URL&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 </div>
-                <input type="text" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="text" id="url-news-input" class="form-control user-text" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                 </div>
-                <button type="button" class="btn gray-button float-right">Submit</button>
+                <button type="button" id="save-news-btn" class="btn gray-button float-right">Submit</button>
             </section>
             </section>
         `

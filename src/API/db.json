@@ -29,14 +29,6 @@
       "location": "NSS",
       "description": "A cook out with the buds.",
       "id": 2
-    },
-    {
-      "userId": "1",
-      "name": "meme",
-      "date": "2020-06-30",
-      "location": "12",
-      "description": "123",
-      "id": 3
     }
   ],
   "comments": [
@@ -80,9 +72,14 @@
   ],
   "friends": [
     {
-      "id": 1,
-      "userId": 1,
-      "following": 3
+      "id": 2,
+      "activeUser": 2,
+      "userId": 2
+    },
+    {
+      "id": 4,
+      "activeUser": 2,
+      "userId": 2
     }
   ]
 }
