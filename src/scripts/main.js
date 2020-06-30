@@ -5,6 +5,7 @@ import NewsTemplate from "./News/NewsTemplate.js";
 import TaskCardGenerator from "./Tasks/TaskCardGenerator.js";
 import FriendTemplate from "./Friends/FriendTemplate.js";
 import API from './API.js'
+
 let data = {
     user: window.sessionStorage.activeUser,
     users:[],
@@ -18,8 +19,8 @@ async function start(){
 
    data.users = await API.getUsers();
    data.tasks = await API.getTasks();
-   data.news = await API.getNews();
-   data.events = await API.getEvents();
+   data.news = await API.getNews(window.sessionStorage.activeUser);
+   data.events = await API.getEvents(window.sessionStorage.activeUser);
    data.comments = await API.getComments();
    data.friends = await API.getFriends(data.user);
    
@@ -27,7 +28,7 @@ async function start(){
         TopSectionTemplate();
         FriendTemplate(data.friends)
         TaskCardGenerator(data.tasks);
-        NewsTemplate(data.news);
+        NewsTemplate(data.news.sort((a,b)=>b.time-a.time));
         EventListeners.setStandard();
     } else{
         renderLogin()

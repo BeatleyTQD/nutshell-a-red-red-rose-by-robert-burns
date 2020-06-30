@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "email": "me@me.com",
+      "username": "TestUser",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "me@me2.com",
+      "username": "TestUser2",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "me@me3.com",
+      "username": "TestUser3",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "email": "dan3@g.com",
+      "username": "dan4",
+      "password": "123",
+      "id": 4
+    }
+  ],
+  "events": [
+    {
+      "userId": 1,
+      "name": "afdafa",
+      "date": "2020-06-19",
+      "location": "adsadf",
+      "description": "afadsf",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "name": "asf",
+      "date": "2020-06-10",
+      "location": "safsf",
+      "description": "asfasf",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "name": "123",
+      "date": "2020-06-11",
+      "location": "123",
+      "description": "123",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "name": "123",
+      "date": "2020-06-11",
+      "location": "123",
+      "description": "123",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "message": "What's up?"
+    }
+  ],
+  "news": [
+    {
+      "userId": 1,
+      "title": "help me",
+      "time": 1593546537820,
+      "synopsis": "help me",
+      "url": "www.helpme.com",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "title": "google",
+      "time": 1593546554354,
+      "synopsis": "google",
+      "url": "www.google.com",
+      "id": 2
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "userId": 1,
+      "task": "Laundry",
+      "date": "06/29/2020",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "task": "Trash",
+      "date": "06/29/2020",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "task": "Park",
+      "date": "06/29/2020",
+      "completed": false
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "activeUserId": 1,
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "activeUserId": 2,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "activeUserId": 1,
+      "userId": 3
+    }
+  ]
+}

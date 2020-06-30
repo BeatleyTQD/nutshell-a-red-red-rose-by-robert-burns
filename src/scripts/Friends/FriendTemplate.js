@@ -1,6 +1,7 @@
 import data from "../main.js";
 import EventListeners from '../EventListeners.js'
 export default function FriendTemplate(arr){
+    console.log(arr, "friends arr")
     document.querySelector('.friend-list').innerHTML = "";
   let friendHtml = friendSectionGenerator(arr);
   document.querySelector('.friend-list').innerHTML = friendHtml;

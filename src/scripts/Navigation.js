@@ -3,6 +3,7 @@ import EventsTemplate from '../scripts/Events/EventsTemplate.js';
 import NewsTemplate from '../scripts/News/NewsTemplate.js';
 import renderLogin from './Login/loginRender.js';
 import data from './main.js'
+import EventListeners from "./EventListeners.js"
 
 export default function navigation(e){
     e.preventDefault();
@@ -19,11 +20,11 @@ export default function navigation(e){
             break;
         case "events":
             console.log('Rendering Events')
-            EventsTemplate(data.events);
+            EventsTemplate(data.events.sort((a, b) => Date.parse(a.date) - Date.parse(b.date)));
             break;
         case "news":
             console.log("Rendering News")
-            NewsTemplate(data.news)
+            NewsTemplate(data.news.sort((a,b)=>b.time-a.time))
             break;
         case "friends":
             console.log("Rendering Friends")
