@@ -5,6 +5,12 @@
       "username": "TestUser",
       "password": "123",
       "id": 1
+    },
+    {
+      "email": "me@me2.com",
+      "username": "TestUser2",
+      "password": "123",
+      "id": 2
     }
   ],
   "events": [
@@ -13,7 +19,24 @@
       "userId": 1,
       "name": "Meet up",
       "date": "06/30/2020",
-      "location": "NSS"
+      "location": "NSS",
+      "description": "A get together for Cohort 41."
+    },
+    {
+      "userId": "1",
+      "name": "Grill out",
+      "date": "06/30/2020",
+      "location": "NSS",
+      "description": "A cook out with the buds.",
+      "id": 2
+    },
+    {
+      "userId": "1",
+      "name": "meme",
+      "date": "2020-06-30",
+      "location": "12",
+      "description": "123",
+      "id": 3
     }
   ],
   "comments": [
@@ -28,9 +51,8 @@
       "id": 1,
       "userId": 1,
       "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
-      "title":"Wormholes Allow Information to Escape Black Holes",
+      "title": "Wormholes Allow Information to Escape Black Holes",
       "synopsis": "Check out this recent discovery about workholes"
-
     }
   ],
   "tasks": [
@@ -57,11 +79,10 @@
     }
   ],
   "friends": [
-      {
-        "id": 1, 
-        "userId": 1, 
-        "following": 3
-      }
-      
+    {
+      "id": 1,
+      "userId": 1,
+      "following": 3
+    }
   ]
 }
