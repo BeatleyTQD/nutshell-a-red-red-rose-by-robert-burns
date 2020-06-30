@@ -1,4 +1,5 @@
 import navigation from './Navigation.js';
+import {deleteNewsHandler, saveNewsHandler} from './News/newsEventHandler.js';
 import {deleteEventHandler, saveEventHandler} from "./Events/eventsEventHandlers.js"
 
 const EventListeners = {
@@ -24,10 +25,28 @@ const EventListeners = {
     //friends
 
     //news
-
+    setNewsDelete(){
+        let newsDelete = document.querySelectorAll("#delete-news-btn")
+        newsDelete.forEach(btn => {
+            btn.addEventListener("click", deleteNews => {
+                let id = deleteNews.target.name
+                deleteNewsHandler(id)
+            })
+        })
+    },
+    setNewsSave(){
+        let newsSave = document.querySelectorAll("#save-news-btn")
+        newsSave.forEach(btn => {
+            btn.addEventListener("click", saveNews => {
+                let id = saveNews.target.name
+                saveNewsHandler(id)
+            })
+        })
+    },
     //comments
 
     //events
+
     setEventDelete(){
         let eventDelete = document.querySelectorAll("#delete-events-btn")
         eventDelete.forEach(btn => {

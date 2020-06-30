@@ -62,11 +62,20 @@
   ],
   "news": [
     {
-      "id": 1,
       "userId": 1,
-      "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
-      "title": "Wormholes Allow Information to Escape Black Holes",
-      "synopsis": "Check out this recent discovery about workholes"
+      "title": "help me",
+      "time": 1593546537820,
+      "synopsis": "help me",
+      "url": "www.helpme.com",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "title": "google",
+      "time": 1593546554354,
+      "synopsis": "google",
+      "url": "www.google.com",
+      "id": 2
     }
   ],
   "tasks": [

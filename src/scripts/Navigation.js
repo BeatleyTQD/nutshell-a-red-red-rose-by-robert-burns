@@ -24,7 +24,7 @@ export default function navigation(e){
             break;
         case "news":
             console.log("Rendering News")
-            NewsTemplate(data.news)
+            NewsTemplate(data.news.sort((a,b)=>b.time-a.time))
             break;
         case "friends":
             console.log("Rendering Friends")

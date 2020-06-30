@@ -65,11 +65,36 @@ const API = {
 
     // News //
     getNews(){
-        return fetch(`${url}news`)
+        return fetch(`${url}news?userId=${window.sessionStorage.activeUser}`)
         .then(res=>res.json())
-        .then(res=>res)
+        .then((res) => {
+            data.news = res
+            return res
+        })
     },
-
+    //deletes user selected news article from the database
+    deleteNews(id){
+        return fetch(`${url}news/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+              }
+        })
+        .then(GlobalSuccess)
+        .then(GlobalError)
+    },
+    //saves a user submitted news article to the database
+    saveNews(data){
+        return fetch(`${url}news`, {
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+        })
+        .then(GlobalSuccess)
+        .catch(GlobalError)
+    },
     // Events //
     getEvents(id){
         return fetch(`${url}events?userId=${id}`)
