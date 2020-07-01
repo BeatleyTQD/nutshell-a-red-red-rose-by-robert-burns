@@ -8,13 +8,15 @@ import data from "../main.js"
 import EventListeners from "../EventListeners.js"
 import TaskCardGenerator from "../Tasks/TaskCardGenerator.js"
 import FriendTemplate from "../Friends/FriendTemplate.js"
+import APIFilter from "../APIFilter.js"
 
 async function setFields(){
    data.user = window.sessionStorage.activeUser,
    data.tasks = await API.getTasks(window.sessionStorage.activeUser)
-   data.news = await API.getNews(window.sessionStorage.activeUser)
-   data.events = await API.getEvents(window.sessionStorage.activeUser)
+   data.news = await API.getNews(APIFilter())
+   data.events = await API.getEvents(APIFilter())
    data.comments = await API.getComments(window.sessionStorage.activeUser)
+   data.friends = await API.getFriends(data.user);
 }
 
 // Takes the user inputs on the registration page and converts them into an object for the Push call

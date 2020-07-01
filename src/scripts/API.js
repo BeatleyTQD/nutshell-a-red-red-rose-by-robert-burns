@@ -99,7 +99,7 @@ const API = {
 
     // News //
     getNews(id){
-        return fetch(`${url}news?userId=${id}`)
+        return fetch(`${url}news?${id}`)
         .then(res=>res.json())
         .then((res) => {
             data.news = res
@@ -131,7 +131,7 @@ const API = {
     },
     // Events //
     getEvents(id){
-        return fetch(`${url}events?userId=${id}`)
+        return fetch(`${url}events?${id}`)
         .then(res=>res.json())
         .then((res) => {
             data.events = res

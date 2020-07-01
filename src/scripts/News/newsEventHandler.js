@@ -3,11 +3,12 @@ import API from "../API.js"
 import data from "../main.js"
 import NewsTemplate from "../News/NewsTemplate.js"
 import newsFactory from "./newsFactory.js"
+import APIFilter from "../APIFilter.js"
 
 const deleteNewsHandler = (id) => {
     //deletes selected news item and then fetches and displays updated data set
     API.deleteNews(id)
-    .then(() => API.getNews())
+    .then(() => API.getNews(APIFilter()))
     .then((response) =>{
         NewsTemplate(response.sort((a,b)=>b.time-a.time))
     })
@@ -22,7 +23,7 @@ const saveNewsHandler = (obj) => {
     if (newsTitleInput !== "" || newsSynopsisInpupt !== "" || newsURLInput !== ""){
     //takes variables above, passes them in to create a new entry, fetches and displays updated data set
     API.saveNews(newsFactory(newsTitleInput, newsSynopsisInpupt, newsURLInput))
-    .then(() => API.getNews())
+    .then(() => API.getNews(APIFilter()))
     .then((response) => {
         NewsTemplate(response.sort((a,b)=>b.time-a.time))
     })

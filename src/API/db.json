@@ -43,7 +43,7 @@
       "id": 4
     },
     {
-      "userId": 1,
+      "userId": 2,
       "name": "123",
       "date": "2020-06-11",
       "location": "123",
@@ -51,7 +51,7 @@
       "id": 5
     },
     {
-      "userId": 1,
+      "userId": 2,
       "name": "123",
       "date": "2020-06-12",
       "location": "134",
@@ -59,7 +59,7 @@
       "id": 6
     },
     {
-      "userId": 1,
+      "userId": 3,
       "name": "123",
       "date": "2020-06-12",
       "location": "123",
@@ -84,7 +84,7 @@
       "id": 1
     },
     {
-      "userId": 1,
+      "userId": 2,
       "title": "google",
       "time": 1593546554354,
       "synopsis": "google",
@@ -121,14 +121,23 @@
       "date": "2020-06-30T22:25:29.906Z",
       "complete": true,
       "id": 5
+    },
+    {
+      "userId": "2",
+      "task": "try me",
+      "date": "2020-07-01T01:43:05.375Z",
+      "complete": true,
+      "id": 6
+    },
+    {
+      "userId": "2",
+      "task": "taas",
+      "date": "2020-06-13",
+      "complete": false,
+      "id": 7
     }
   ],
   "friends": [
-    {
-      "id": 1,
-      "activeUserId": 1,
-      "userId": 2
-    },
     {
       "id": 2,
       "activeUserId": 2,

@@ -13,7 +13,8 @@ export default function NewsTemplate(news){
 }
 
 const newsConverter = (newsItem) => {
-    const newsHTML = 
+    if(newsItem.userId == window.sessionStorage.activeUser){
+        const newsHTML = 
             `<div class="card text-center">
             <div class="card-header"></div>
             <div class="card-body">
@@ -26,6 +27,22 @@ const newsConverter = (newsItem) => {
             </div>
             <hr/>`
             return newsHTML
+    }else{
+        const newsHTML = 
+            `<div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body-friend">
+                <h5 class="card-title">${newsItem.title}</h5>
+                <p class="card-text">${newsItem.synopsis}</p>
+                <a href="http://${newsItem.url}" class="btn purple-button">URL</a>
+                <div>${newsItem.userId == window.sessionStorage.activeUser ? `<button type="button" class="btn-outline-danger" name=${newsItem.id} id="delete-news-btn">Delete</button>` : ""}</div>
+            </div>
+            <div class="card-footer text-muted"></div>
+            </div>
+            <hr/>`
+            return newsHTML
+    }
+    
 }
     
 const newsInputField = (newsItem) => {

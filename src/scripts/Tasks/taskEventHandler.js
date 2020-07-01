@@ -1,12 +1,7 @@
 import API from '../API.js';
 import TaskCardGenerator from './TaskCardGenerator.js'
 import data from '../main.js';
-const newTask = {
-    "userId": window.localStorage.activeUser,
-    "task": "",
-    "date": new Date(),
-    "complete": false
-  }
+
 
 const taskEventHandlers = {
    async taskComplete(e){
@@ -28,6 +23,12 @@ if (proceed) {
 }  
     },
    async addTask(e){
+    const newTask = {
+      "userId": window.localStorage.activeUser,
+      "task": document.querySelector("#task-input").value,
+      "date": document.querySelector("#task-date-input").value,
+      "complete": false
+    }
     newTask.userId = data.user
       await API.addTask(newTask);
      let arr = await API.getTasks(window.sessionStorage.activeUser);
