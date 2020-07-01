@@ -70,7 +70,7 @@ const API = {
         })
     },
     addTask(data){
-        return fetch(`${url}tasks?`, {
+        return fetch(`${url}tasks`, {
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'

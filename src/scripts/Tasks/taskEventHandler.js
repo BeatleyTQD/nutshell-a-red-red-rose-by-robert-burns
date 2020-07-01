@@ -24,12 +24,12 @@ if (proceed) {
     },
    async addTask(e){
     const newTask = {
-      "userId": window.localStorage.activeUser,
+      "userId": 1,
       "task": document.querySelector("#task-input").value,
       "date": document.querySelector("#task-date-input").value,
       "complete": false
     }
-    newTask.userId = data.user
+    newTask.userId = parseInt(data.user)
       await API.addTask(newTask);
      let arr = await API.getTasks(window.sessionStorage.activeUser);
      TaskCardGenerator(arr);  
@@ -45,10 +45,7 @@ if (proceed) {
     }
        
     },
-    inputChange(e){
-        newTask.task = e.target.value;
-        
-    }
+    
 }
 const filterFunction = (arr, id) =>{
     for(let i = 0; i < arr.length; i++){

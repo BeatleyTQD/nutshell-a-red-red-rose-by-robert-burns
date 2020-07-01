@@ -3,9 +3,9 @@ import data from './main.js'
 export default function TopSectionTemplate(){
   let filteredTasks = data.tasks.filter(task=> {
     if(task.complete){
-      return true
-    }else {
       return false
+    }else {
+      return true
     }
   })
     let html =  `

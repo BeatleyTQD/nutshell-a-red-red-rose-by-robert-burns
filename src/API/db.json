@@ -94,20 +94,6 @@
   ],
   "tasks": [
     {
-      "id": 1,
-      "userId": 1,
-      "task": "Laundry",
-      "date": "06/29/2020",
-      "completed": false
-    },
-    {
-      "id": 2,
-      "userId": 1,
-      "task": "Trash",
-      "date": "06/29/2020",
-      "completed": true
-    },
-    {
       "id": 3,
       "userId": 1,
       "task": "Park",
@@ -116,25 +102,25 @@
       "complete": true
     },
     {
-      "userId": "1",
-      "task": "123",
-      "date": "2020-06-30T22:25:29.906Z",
-      "complete": true,
-      "id": 5
-    },
-    {
-      "userId": "2",
-      "task": "try me",
-      "date": "2020-07-01T01:43:05.375Z",
-      "complete": true,
-      "id": 6
-    },
-    {
-      "userId": "2",
-      "task": "taas",
-      "date": "2020-06-13",
+      "userId": 1,
+      "task": "124535",
+      "date": "2020-07-17",
       "complete": false,
-      "id": 7
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "task": "435353",
+      "date": "2020-07-23",
+      "complete": true,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "task": "151321",
+      "date": "2020-07-24",
+      "complete": true,
+      "id": 13
     }
   ],
   "friends": [
