@@ -61,11 +61,13 @@ const API = {
     },
 
     // Tasks //
-    getTasks(){
-        return fetch(`${url}tasks`)
+    getTasks(id){
+        return fetch(`${url}tasks?userId=${id}`)
         .then(res=>res.json())
-        .then(res=>res)
-        .catch(GlobalError);
+        .then((res) => {
+            data.tasks = res
+            return res
+        })
     },
     addTask(data){
         return fetch(`${url}tasks`, {
@@ -96,8 +98,8 @@ const API = {
     },
 
     // News //
-    getNews(){
-        return fetch(`${url}news?userId=${window.sessionStorage.activeUser}`)
+    getNews(id){
+        return fetch(`${url}news?${id}`)
         .then(res=>res.json())
         .then((res) => {
             data.news = res
@@ -129,7 +131,7 @@ const API = {
     },
     // Events //
     getEvents(id){
-        return fetch(`${url}events?userId=${id}`)
+        return fetch(`${url}events?${id}`)
         .then(res=>res.json())
         .then((res) => {
             data.events = res
@@ -178,7 +180,7 @@ const API = {
 
     //Friends //
     getFriends(id){
-        return fetch(`${url}friends?activeUser=${id}&_expand=user`)
+        return fetch(`${url}friends?activeUserId=${id}&_expand=user`)
         .then(res=> res.json())
         .then(res=>res)
     },

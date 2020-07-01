@@ -26,12 +26,6 @@ export default function navigation(e){
             console.log("Rendering News")
             NewsTemplate(data.news.sort((a,b)=>b.time-a.time))
             break;
-        case "friends":
-            console.log("Rendering Friends")
-            break;
-        case "users":
-            console.log("Rendering Users")
-            break;
         case "logout":
             console.log("Logout")
             renderLogin()

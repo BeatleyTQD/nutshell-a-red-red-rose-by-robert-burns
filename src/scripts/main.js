@@ -5,9 +5,10 @@ import NewsTemplate from "./News/NewsTemplate.js";
 import TaskCardGenerator from "./Tasks/TaskCardGenerator.js";
 import FriendTemplate from "./Friends/FriendTemplate.js";
 import API from './API.js'
+import APIFilter from "./APIFilter.js"
 
 let data = {
-    user: window.sessionStorage.activeUser,
+    user: "",
     users:[],
     tasks:[],
     news:[],
@@ -16,13 +17,14 @@ let data = {
     friends:[]
 }
 async function start(){
-
+   data.user = window.sessionStorage.activeUser
    data.users = await API.getUsers();
-   data.tasks = await API.getTasks();
-   data.news = await API.getNews(window.sessionStorage.activeUser);
-   data.events = await API.getEvents(window.sessionStorage.activeUser);
-   data.comments = await API.getComments();
    data.friends = await API.getFriends(data.user);
+   data.tasks = await API.getTasks(window.sessionStorage.activeUser)
+   data.news = await API.getNews(APIFilter())
+   data.events = await API.getEvents(APIFilter())
+   data.comments = await API.getComments()
+   
    
     if(window.sessionStorage.activeUser) {
         TopSectionTemplate();
@@ -30,6 +32,7 @@ async function start(){
         TaskCardGenerator(data.tasks);
         NewsTemplate(data.news.sort((a,b)=>b.time-a.time));
         EventListeners.setStandard();
+        EventListeners.searchUsersEvent();
     } else{
         renderLogin()
     }

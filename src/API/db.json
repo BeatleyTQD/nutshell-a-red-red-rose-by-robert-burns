@@ -27,14 +27,6 @@
   ],
   "events": [
     {
-      "userId": 1,
-      "name": "afdafa",
-      "date": "2020-06-19",
-      "location": "adsadf",
-      "description": "afadsf",
-      "id": 1
-    },
-    {
       "userId": 2,
       "name": "asf",
       "date": "2020-06-10",
@@ -51,7 +43,7 @@
       "id": 4
     },
     {
-      "userId": 1,
+      "userId": 2,
       "name": "123",
       "date": "2020-06-11",
       "location": "123",
@@ -59,28 +51,20 @@
       "id": 5
     },
     {
-      "userId": 1,
-      "name": "New Event",
-      "date": "2020-06-30",
-      "location": "My House",
-      "description": "Party Party",
+      "userId": 2,
+      "name": "123",
+      "date": "2020-06-12",
+      "location": "134",
+      "description": "123",
       "id": 6
     },
     {
-      "userId": 1,
-      "name": "New Event",
-      "date": "2020-06-30",
-      "location": "My House",
-      "description": "Party",
+      "userId": 3,
+      "name": "123",
+      "date": "2020-06-12",
+      "location": "123",
+      "description": "123",
       "id": 7
-    },
-    {
-      "userId": 1,
-      "name": "New Event",
-      "date": "2020-06-30",
-      "location": "MY hOUSE",
-      "description": "Party",
-      "id": 8
     }
   ],
   "comments": [
@@ -107,7 +91,7 @@
       "id": 1
     },
     {
-      "userId": 1,
+      "userId": 2,
       "title": "google",
       "time": 1593546554354,
       "synopsis": "google",
@@ -125,33 +109,36 @@
   ],
   "tasks": [
     {
-      "id": 1,
-      "userId": 1,
-      "task": "Laundry",
-      "date": "06/29/2020",
-      "completed": false
-    },
-    {
-      "id": 2,
-      "userId": 1,
-      "task": "Trash",
-      "date": "06/29/2020",
-      "completed": true
-    },
-    {
       "id": 3,
       "userId": 1,
       "task": "Park",
       "date": "06/29/2020",
-      "completed": false
+      "completed": false,
+      "complete": true
+    },
+    {
+      "userId": 1,
+      "task": "124535",
+      "date": "2020-07-17",
+      "complete": false,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "task": "435353",
+      "date": "2020-07-23",
+      "complete": true,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "task": "151321",
+      "date": "2020-07-24",
+      "complete": true,
+      "id": 13
     }
   ],
   "friends": [
-    {
-      "id": 1,
-      "activeUserId": 1,
-      "userId": 2
-    },
     {
       "id": 2,
       "activeUserId": 2,
