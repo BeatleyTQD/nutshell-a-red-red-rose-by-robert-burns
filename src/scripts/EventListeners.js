@@ -1,10 +1,12 @@
 import navigation from './Navigation.js';
 import commentEventHandler from './Comments/commentEventHandlers.js'
+import updateCommentFields from './Comments/updatedCommentField.js'
 import taskEventHandler from "./Tasks/taskEventHandler.js";
 import friendEvents from './Friends/friendEventListener.js';
 import {deleteNewsHandler, saveNewsHandler} from './News/newsEventHandler.js';
 import {deleteEventHandler, saveEventHandler} from "./Events/eventsEventHandlers.js";
 import searchUsers from './Users/userEvents.js'
+import API from './API.js';
 
 const EventListeners = {
     setStandard(){
@@ -85,15 +87,37 @@ const EventListeners = {
     editCommentEvent(){
         let editButtons = document.querySelectorAll('#edit-comment-btn');
         editButtons.forEach(btn=>{
-            btn.addEventListener('click', commentEventHandler.editComment);
+            btn.addEventListener('click', event => {
+                const entryToEdit = event.target.name
+                console.log(entryToEdit)
+                updateCommentFields(entryToEdit)
+                this.addInputEvent()
+            });
         })
 
+    },
+    addInputEvent(){
+        document.querySelector("#comment-text-input")
+        .addEventListener("input",commentEventHandler.input)
+        document.querySelector("#save-comment-btn").removeEventListener("click", commentEventHandler.saveCommentHandler)
+        this.updateComment()
+    },
+    updateComment(){
+        document.querySelector("#save-comment-btn").addEventListener("click", commentEventHandler.updateComment)
     },
     deleteCommentEvent(){
         let deleteButtons = document.querySelectorAll('#delete-comment-btn');
         deleteButtons.forEach(btn=>{
             btn.addEventListener('click', commentEventHandler.deleteComment);
         })
+    },
+    saveCommentEvent(){
+        let saveButtons = document.querySelectorAll("#save-comment-btn");
+        saveButtons.forEach(btn =>{  
+                btn.addEventListener('click', 
+                commentEventHandler.saveCommentHandler
+                )
+             })
     },
     addFriendCommentEvent(){
         let addFriendBtn = document.querySelectorAll('#add-friend-comment')

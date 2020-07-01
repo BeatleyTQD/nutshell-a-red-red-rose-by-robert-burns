@@ -96,6 +96,33 @@ const API = {
             body: JSON.stringify(data)
         })
     },
+    addTask(data){
+        return fetch(`${url}tasks`, {
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+              },
+            body: JSON.stringify(data)
+        })
+    },
+    deleteTask(id){
+        return fetch(`${url}tasks/${id}`,{
+            method:'DELETE',
+            headers: {
+                'Content-Type' : 'application/json'
+            }
+        })
+    },
+    updateTask(data, id){
+        return fetch(`${url}tasks/${id}`, {
+            method: "PUT", 
+            headers: {
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+    },
 
     // News //
     getNews(id){
@@ -177,7 +204,26 @@ const API = {
               }
         })
     },
-
+    saveComments(data){
+        return fetch(`${url}comments`, {
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+        })
+        .then(GlobalSuccess)
+        .catch(GlobalError)
+    },
+    updateComments(data, id){
+        return fetch(`${url}comments/${id}`, {
+            method: "PUT", 
+            headers: {
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+    },
     //Friends //
     getFriends(id){
         return fetch(`${url}friends?activeUserId=${id}&_expand=user`)
