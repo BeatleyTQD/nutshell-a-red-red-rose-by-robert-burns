@@ -204,6 +204,17 @@ const API = {
               }
         })
     },
+    saveComments(data){
+        return fetch(`${url}comments`, {
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+        })
+        .then(GlobalSuccess)
+        .catch(GlobalError)
+    },
     //Friends //
     getFriends(id){
         return fetch(`${url}friends?activeUserId=${id}&_expand=user`)

@@ -65,9 +65,23 @@
       "location": "123",
       "description": "123",
       "id": 7
+    },
+    {
+      "userId": 1,
+      "name": "yo",
+      "date": "2020-12-31",
+      "location": "yo",
+      "description": "yo",
+      "id": 8
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "comment": "test post"
+   }
+  ],
   "news": [
     {
       "userId": 1,
@@ -92,6 +106,14 @@
       "synopsis": "123",
       "url": "123",
       "id": 3
+    },
+    {
+      "userId": 1,
+      "title": "yo",
+      "time": 1593614619601,
+      "synopsis": "yo",
+      "url": "www.yo.com",
+      "id": 4
     }
   ],
   "tasks": [
@@ -123,6 +145,13 @@
       "date": "2020-07-24",
       "complete": true,
       "id": 13
+    },
+    {
+      "userId": 1,
+      "task": "whats up",
+      "date": "2020-07-01",
+      "complete": false,
+      "id": 14
     }
   ],
   "friends": [

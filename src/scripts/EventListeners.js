@@ -94,6 +94,17 @@ const EventListeners = {
             btn.addEventListener('click', commentEventHandler.deleteComment);
         })
     },
+    saveCommentEvent(){
+        let saveButtons = document.querySelectorAll("#save-comment-btn");
+        saveButtons.forEach(btn =>{
+            btn.addEventListener('click', saveComment => {
+                saveComment.preventDefault()
+                let id = saveComment.target.name
+                console.log(id)
+                saveComment(id)
+            });
+        })
+    },
     //events
 
     setEventDelete(){

@@ -7,6 +7,7 @@ export default function CommentsTemplate(arr){
     html += commentInput();
     renderComments(html);
     EventListeners.editDeleteComment()
+    EventListeners.saveCommentEvent()
 
 }
 const renderComments=(html)=>{
@@ -41,8 +42,8 @@ const commentInput = () =>{
       <div class="input-group-prepend">
         <span class="input-group-text">What's on your mind?</span>
       </div>
-      <textarea class="form-control user-text" aria-label="What's on your mind?"></textarea>
-      <button type="button" class="btn btn-secondary">Submit</button>
+      <textarea id="comment-text-input" class="form-control user-text" aria-label="What's on your mind?"></textarea>
+      <button type="button" id="save-comment-btn" class="btn btn-secondary">Submit</button>
     </div>
     <hr/>
  
