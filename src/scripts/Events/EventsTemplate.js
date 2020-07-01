@@ -1,4 +1,5 @@
 //Module by Brandon W. Responsible for iterating through event data to generate HTML string with each entry as well as field for adding new event article.
+//Module API Integration,css for first post integration and sorting logic by Tyler H.
 import EventListeners from "../EventListeners.js"
 export default function EventsTemplate(events){
         let EventsTemplate = document.querySelector(".bottom-section")

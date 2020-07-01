@@ -251,4 +251,19 @@ input[type=text] {
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
+<<<<<<< HEAD
 
+=======
+.search-users-items{
+    width: 200px;
+    height: fit-content;
+    max-height: 200px;
+    overflow: scroll;
+}
+.search-users-items::-webkit-scrollbar {
+    display: none;
+  }
+.hidden {
+    display: none;
+}
+>>>>>>> master

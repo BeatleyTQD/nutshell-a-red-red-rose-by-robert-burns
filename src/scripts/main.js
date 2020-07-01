@@ -6,7 +6,7 @@ import TaskCardGenerator from "./Tasks/TaskCardGenerator.js";
 import FriendTemplate from "./Friends/FriendTemplate.js";
 import API from './API.js'
 import APIFilter from "./APIFilter.js"
-
+// Local data array
 let data = {
     user: "",
     userName: [],
@@ -17,6 +17,7 @@ let data = {
     comments:[],
     friends:[]
 }
+// sets local data array on refresh/ Checks in user is logged in
 async function start(){
    data.user = parseInt(window.sessionStorage.activeUser)
    data.users = await API.getUsers();

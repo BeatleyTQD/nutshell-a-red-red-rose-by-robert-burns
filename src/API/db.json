@@ -51,27 +51,34 @@
       "id": 8
     },
     {
-      "userId": 2,
-      "name": "2324",
-      "date": "2020-07-21",
-      "location": "2323",
-      "description": "232",
-      "id": 9
+      "userId": 3,
+      "name": "123",
+      "date": "2020-06-12",
+      "location": "123",
+      "description": "123",
+      "id": 7
     },
     {
-      "userId": 2,
-      "name": "hdhdh",
-      "date": "2020-07-22",
-      "location": "gfssgs",
-      "description": "hshsfh",
-      "id": 10
+      "userId": 1,
+      "name": "yo",
+      "date": "2020-12-31",
+      "location": "yo",
+      "description": "yo",
+      "id": 8
     }
   ],
   "comments": [
     {
+      "comment": "test12",
+      "username": "Tony",
+      "userId": "1",
+      "id": 1
+    },
+    {
       "id": 1,
-      "userId": 1,
-      "message": "What's up?"
+      "username": "Tony",
+      "userId": 4,
+      "comment": "What's up?"
     }
   ],
   "news": [
@@ -135,13 +142,6 @@
     },
     {
       "userId": 1,
-      "task": "124535",
-      "date": "2020-07-17",
-      "complete": false,
-      "id": 11
-    },
-    {
-      "userId": 1,
       "task": "435353",
       "date": "2020-07-23",
       "complete": true,
@@ -155,18 +155,25 @@
       "id": 13
     },
     {
-      "userId": 2,
-      "task": "5615165",
-      "date": "2020-07-17",
+      "userId": 1,
+      "task": "Adding a new task",
+      "date": "2020-07-31",
       "complete": false,
       "id": 14
     },
     {
-      "userId": 2,
-      "task": "fhdhg",
-      "date": "2020-07-17",
+      "userId": 1,
+      "task": "Another new one",
+      "date": "2020-07-31",
       "complete": false,
       "id": 15
+    },
+    {
+      "userId": 1,
+      "task": "And another",
+      "date": "2020-07-30",
+      "complete": false,
+      "id": 16
     }
   ],
   "friends": [
@@ -176,9 +183,19 @@
       "userId": 1
     },
     {
-      "id": 3,
-      "activeUserId": 1,
-      "userId": 3
+      "activeUserId": "1",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "activeUserId": "1",
+      "userId": "2",
+      "id": 4
+    },
+    {
+      "activeUserId": "1",
+      "userId": "3",
+      "id": 5
     }
   ]
 }

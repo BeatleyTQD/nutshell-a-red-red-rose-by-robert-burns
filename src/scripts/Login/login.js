@@ -10,6 +10,7 @@ import TaskCardGenerator from "../Tasks/TaskCardGenerator.js"
 import FriendTemplate from "../Friends/FriendTemplate.js"
 import APIFilter from "../APIFilter.js"
 
+// Sets the local data array upon login
 async function setFields(){
    data.user = window.sessionStorage.activeUser,
    data.friends = await API.getFriends(data.user);
