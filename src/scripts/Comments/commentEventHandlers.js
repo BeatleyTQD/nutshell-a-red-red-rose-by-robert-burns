@@ -1,6 +1,10 @@
 import API from "../API.js"
 import CommentTemplate from "./CommentsTemplate.js"
 import data from "../main.js";
+let newFriendRelationShip = {
+    "activeUserId": undefined,
+    "userId": undefined
+  }
 const commentEventHandler = {
     async deleteComment(e){
         e.preventDefault();
@@ -13,13 +17,20 @@ const commentEventHandler = {
         e.preventDefault();
         console.log('Editing Comment')
     },
-    saveComment(obj){
-        let commentTextInput = document.querySelector("#comment-text-input").value
-        console.log(commentTextInput)
-        API.saveComments().then(() =>
-        API.getComments().then((response) => {
-            data.comments = response
-        }))
+    // saveComment(obj){
+    //     let commentTextInput = document.querySelector("#comment-text-input").value
+    //     console.log(commentTextInput)
+    //     API.saveComments().then(() =>
+    //     API.getComments().then((response) => {
+    //         data.comments = response
+    //     })),
+
+    addFriend(e){
+        e.preventDefault();
+        newFriendRelationShip.userId = e.target.name;
+        newFriendRelationShip.activeUserId = data.user;
+        API.addFriend(newFriendRelationShip);
+        console.log("Adding Friend")
     }
 }
 export default commentEventHandler;

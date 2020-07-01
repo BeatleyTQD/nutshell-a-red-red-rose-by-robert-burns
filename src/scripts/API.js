@@ -133,7 +133,7 @@ const API = {
             return res
         })
     },
-    //deletes user selected news article from the database
+
     deleteNews(id){
         return fetch(`${url}news/${id}`, {
             method: 'DELETE',
@@ -227,6 +227,15 @@ const API = {
             headers: {
                 "Content-Type":"application/json"
             }
+        })
+    },
+    addFriend(data){
+        return fetch(`${url}friends`, {
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(data)
         })
     }
 }
