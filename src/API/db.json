@@ -17,6 +17,12 @@
       "username": "TestUser3",
       "password": "123",
       "id": 3
+    },
+    {
+      "email": "dan3@g.com",
+      "username": "dan4",
+      "password": "123",
+      "id": 4
     }
   ],
   "events": [
@@ -53,13 +59,7 @@
       "id": 5
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "userId": 1,
-      "message": "What's up?"
-    }
-  ],
+  "comments": [],
   "news": [
     {
       "userId": 1,
@@ -84,7 +84,8 @@
       "userId": 1,
       "task": "Laundry",
       "date": "06/29/2020",
-      "completed": false
+      "completed": false,
+      "complete": true
     },
     {
       "id": 2,
