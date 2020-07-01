@@ -251,9 +251,6 @@ input[type=text] {
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
-<<<<<<< HEAD
-
-=======
 .search-users-items{
     width: 200px;
     height: fit-content;
@@ -266,4 +263,3 @@ input[type=text] {
 .hidden {
     display: none;
 }
->>>>>>> master
