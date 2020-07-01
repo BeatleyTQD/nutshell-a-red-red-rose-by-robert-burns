@@ -1,14 +1,26 @@
 import EventListeners from '../EventListeners.js';
+import data from '../main.js';
 
-
+let friendObj;
 export default function CommentsTemplate(arr){
     let html = ``;
+    friendObj = trackFriends(data.friends);
     html = commentsGenerator(arr)
     html += commentInput();
     renderComments(html);
-    EventListeners.editDeleteComment()
+    EventListeners.editDeleteComment();
+    EventListeners.addFriendCommentEvent();
 
 }
+const trackFriends=(list)=>{
+  let obj = {};
+  for(let i = 0; i < list.length; i++){
+    obj[list[i].userId] = list[i].userId
+  }
+  console.log(obj, "friends obj")
+  return obj;
+}
+
 const renderComments=(html)=>{
     document.querySelector(".bottom-section").innerHTML = html 
 }
@@ -24,6 +36,7 @@ const commentCard= (obj)=>{
   let html = `
   <div class="card text-center">
   <div class="card-header"></div>
+  ${ obj.userId != window.sessionStorage.activeUser && !friendObj[obj.userId] ?`<button type="button" id="add-friend-comment" name=${obj.userId}>Add Friend</button>` : "" }
   <div class="card-body">
     <h5 class="card-title">User Who Posted</h5>
     <p class="card-text">Cronut glossier vexillologist, art party irony banh mi fanny pack polaroid listicle church-key butcher you probably haven't heard of them portland put a bird on it. You probably haven't heard of them gochujang fam biodiesel hella, bitters kale chips. Heirloom hashtag tattooed authentic, selfies leggings sartorial kitsch man bun blue bottle pour-over aesthetic echo park viral 90's.</p>

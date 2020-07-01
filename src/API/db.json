@@ -57,12 +57,43 @@
       "location": "123",
       "description": "123",
       "id": 5
+    },
+    {
+      "userId": 1,
+      "name": "New Event",
+      "date": "2020-06-30",
+      "location": "My House",
+      "description": "Party Party",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "name": "New Event",
+      "date": "2020-06-30",
+      "location": "My House",
+      "description": "Party",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "name": "New Event",
+      "date": "2020-06-30",
+      "location": "MY hOUSE",
+      "description": "Party",
+      "id": 8
     }
   ],
   "comments": [
     {
       "id": 1,
-      "userId": 1,
+      "username": "Tony",
+      "userId": 2,
+      "message": "What's up?"
+    },
+    {
+      "id": 1,
+      "username": "Tony",
+      "userId": 7,
       "message": "What's up?"
     }
   ],
@@ -82,6 +113,14 @@
       "synopsis": "google",
       "url": "www.google.com",
       "id": 2
+    },
+    {
+      "userId": 1,
+      "title": "This is a news Article",
+      "time": 1593550897073,
+      "synopsis": "traveling from Houston, TX we found ourselves in the middle of nowhere",
+      "url": "http://notarealsite.com",
+      "id": 3
     }
   ],
   "tasks": [
@@ -122,6 +161,11 @@
       "id": 3,
       "activeUserId": 1,
       "userId": 3
+    },
+    {
+      "activeUserId": "1",
+      "userId": "2",
+      "id": 4
     }
   ]
 }

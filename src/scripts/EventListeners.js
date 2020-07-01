@@ -94,6 +94,12 @@ const EventListeners = {
             btn.addEventListener('click', commentEventHandler.deleteComment);
         })
     },
+    addFriendCommentEvent(){
+        let addFriendBtn = document.querySelectorAll('#add-friend-comment')
+        .forEach(friend=>{
+            friend.addEventListener('click', commentEventHandler.addFriend)
+        })
+    },
     //events
 
     setEventDelete(){
