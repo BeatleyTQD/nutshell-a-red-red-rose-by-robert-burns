@@ -215,6 +215,15 @@ const API = {
         .then(GlobalSuccess)
         .catch(GlobalError)
     },
+    updateComments(data, id){
+        return fetch(`${url}comments/${id}`, {
+            method: "PUT", 
+            headers: {
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+    },
     //Friends //
     getFriends(id){
         return fetch(`${url}friends?activeUserId=${id}&_expand=user`)

@@ -33,14 +33,13 @@ const commentsGenerator =(arr)=>{
   return html;
 }
 const commentCard= (obj)=>{
-  console.log(obj, window.sessionStorage.activeUser)
   let html = `
   <div class="card text-center">
   <div class="card-header"></div>
   ${ obj.userId != window.sessionStorage.activeUser && !friendObj[obj.userId] ?`<button type="button" id="add-friend-comment" name=${obj.userId}>Add Friend</button>` : "" }
   <div class="card-body">
-    <h5 class="card-title">${window.sessionStorage.activeUser}</h5>
-    <p class="card-text">${obj.comment}</p>
+    <h5 class="card-title comment-title">${obj.userId}</h5>
+    <p id="commentText-${obj.id}" class="card-text">${obj.comment}</p>
   </div>
   ${obj.userId == window.sessionStorage.activeUser ? `<button type="button" name=${obj.id} id="edit-comment-btn">Edit</button><button type="button" name=${obj.id} id="delete-comment-btn">Delete</button>` : ""}
   <div class="card-footer text-muted"></div>
@@ -52,10 +51,11 @@ return html;
 const commentInput = () =>{
   return ` <section class="enter-chat-message">
   <div class="input-group">
+  <input type="hidden" id="commentId" value="" />
       <div class="input-group-prepend">
         <span class="input-group-text">What's on your mind?</span>
       </div>
-      <textarea id="comment-text-input" class="form-control user-text" aria-label="What's on your mind?"></textarea>
+      <textarea id="comment-text-input" name="comment-text" value="" class="form-control user-text" aria-label="What's on your mind?"></textarea>
       <button type="button" id="save-comment-btn" class="btn btn-secondary">Submit</button>
     </div>
     <hr/>

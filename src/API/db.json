@@ -77,9 +77,19 @@
   ],
   "comments": [
     {
-      "userId": 1,
-      "comment": "yo",
+      "comment": "test12",
+      "userId": "1",
       "id": 1
+    },
+    {
+      "comment": "test23",
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "comment": "test34",
+      "userId": "1",
+      "id": 3
     }
   ],
   "news": [
