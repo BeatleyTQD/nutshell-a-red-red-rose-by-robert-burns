@@ -39,8 +39,8 @@ const commentCard= (obj)=>{
   <div class="card-header"></div>
   ${ obj.userId != window.sessionStorage.activeUser && !friendObj[obj.userId] ?`<button type="button" id="add-friend-comment" name=${obj.userId}>Add Friend</button>` : "" }
   <div class="card-body">
-    <h5 class="card-title">User Who Posted</h5>
-    <p class="card-text">Cronut glossier vexillologist, art party irony banh mi fanny pack polaroid listicle church-key butcher you probably haven't heard of them portland put a bird on it. You probably haven't heard of them gochujang fam biodiesel hella, bitters kale chips. Heirloom hashtag tattooed authentic, selfies leggings sartorial kitsch man bun blue bottle pour-over aesthetic echo park viral 90's.</p>
+    <h5 class="card-title">${window.sessionStorage.activeUser}</h5>
+    <p class="card-text">${obj.comment}</p>
   </div>
   ${obj.userId == window.sessionStorage.activeUser ? `<button type="button" name=${obj.id} id="edit-comment-btn">Edit</button><button type="button" name=${obj.id} id="delete-comment-btn">Delete</button>` : ""}
   <div class="card-footer text-muted"></div>

@@ -1,6 +1,7 @@
 import API from "../API.js"
 import CommentTemplate from "./CommentsTemplate.js"
 import data from "../main.js";
+import commentFactory from "./commentFactory.js";
 let newFriendRelationShip = {
     "activeUserId": undefined,
     "userId": undefined
@@ -17,14 +18,16 @@ const commentEventHandler = {
         e.preventDefault();
         console.log('Editing Comment')
     },
-    // saveComment(obj){
-    //     let commentTextInput = document.querySelector("#comment-text-input").value
-    //     console.log(commentTextInput)
-    //     API.saveComments().then(() =>
-    //     API.getComments().then((response) => {
-    //         data.comments = response
-    //     })),
-
+    saveCommentHandler(obj){
+        let commentTextInput = document.querySelector("#comment-text-input").value
+        console.log(commentTextInput)
+        API.saveComments(commentFactory(commentTextInput))
+        .then(() => API.getComments()
+        .then((response) => {
+            CommentTemplate(response)
+            }
+        ))
+    },
     addFriend(e){
         e.preventDefault();
         newFriendRelationShip.userId = e.target.name;

@@ -102,7 +102,7 @@ const EventListeners = {
                 saveComment.preventDefault()
                 let id = saveComment.target.name
                 console.log(id)
-                saveComment(id)
+                commentEventHandler.saveCommentHandler(id)
             })})},
 
     addFriendCommentEvent(){

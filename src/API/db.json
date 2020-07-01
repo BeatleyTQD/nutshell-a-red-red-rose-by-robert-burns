@@ -77,16 +77,9 @@
   ],
   "comments": [
     {
-      "id": 1,
-      "username": "Tony",
-      "userId": 2,
-      "message": "What's up?"
-    },
-    {
-      "id": 1,
-      "username": "Tony",
-      "userId": 7,
-      "message": "What's up?"
+      "userId": 1,
+      "comment": "yo",
+      "id": 1
     }
   ],
   "news": [
