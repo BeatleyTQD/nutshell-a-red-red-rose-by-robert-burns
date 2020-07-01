@@ -1,10 +1,10 @@
 # Nutshell, a Red Red Rose Production.
 
-Nutshell is a dashboard for people to use to organize their daily tasks, events, news article, friends, and chat messages. 
+Nutshell is a dashboard application for people to use to organize their daily tasks, events, news article, friends, and chat messages. 
 
 ## Installation
 
-All needed files are included in the project. The user will need to locally host both the source files as well as the database via json-server.
+All needed files are included in the project. The user will need to locally host both the source files as well as the database via json-server on port 8088.
 
 ## Usage
 User will be prompted to login or create a new account.
