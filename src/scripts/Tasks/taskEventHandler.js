@@ -2,7 +2,6 @@ import API from '../API.js';
 import TaskCardGenerator from './TaskCardGenerator.js'
 import data from '../main.js';
 
-
 const taskEventHandlers = {
    async taskComplete(e){
     var proceed = confirm("Are you sure you want to proceed?");

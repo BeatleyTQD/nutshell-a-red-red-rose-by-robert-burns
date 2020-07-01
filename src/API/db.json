@@ -65,20 +65,31 @@
       "location": "123",
       "description": "123",
       "id": 7
+    },
+    {
+      "userId": 1,
+      "name": "yo",
+      "date": "2020-12-31",
+      "location": "yo",
+      "description": "yo",
+      "id": 8
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "username": "Tony",
-      "userId": 2,
-      "message": "What's up?"
+      "comment": "test12",
+      "userId": "1",
+      "id": 1
     },
     {
-      "id": 1,
-      "username": "Tony",
-      "userId": 7,
-      "message": "What's up?"
+      "comment": "test23",
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "comment": "test34",
+      "userId": "1",
+      "id": 3
     }
   ],
   "news": [
@@ -136,6 +147,13 @@
       "date": "2020-07-24",
       "complete": true,
       "id": 13
+    },
+    {
+      "userId": 1,
+      "task": "whats up",
+      "date": "2020-07-01",
+      "complete": false,
+      "id": 14
     }
   ],
   "friends": [
