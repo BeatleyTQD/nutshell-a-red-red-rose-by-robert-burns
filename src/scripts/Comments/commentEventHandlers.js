@@ -46,6 +46,8 @@ const commentEventHandler = {
         newFriendRelationShip.userId = e.target.name;
         newFriendRelationShip.activeUserId = data.user;
         API.addFriend(newFriendRelationShip);
+        let arr = await API.getComments();
+        CommentTemplate(arr);
         console.log("Adding Friend")
     },
     input(e){

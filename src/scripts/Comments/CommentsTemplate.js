@@ -18,7 +18,6 @@ const trackFriends=(list)=>{
   for(let i = 0; i < list.length; i++){
     obj[list[i].userId] = list[i].userId
   }
-  console.log(obj, "friends obj")
   return obj;
 }
 

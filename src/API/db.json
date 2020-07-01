@@ -78,18 +78,15 @@
   "comments": [
     {
       "comment": "test12",
+      "username": "Tony",
       "userId": "1",
       "id": 1
     },
     {
-      "comment": "test23",
-      "userId": "1",
-      "id": 2
-    },
-    {
-      "comment": "test34",
-      "userId": "1",
-      "id": 3
+      "id": 1,
+      "username": "Tony",
+      "userId": 4,
+      "message": "What's up?"
     }
   ],
   "news": [
@@ -129,13 +126,6 @@
     },
     {
       "userId": 1,
-      "task": "124535",
-      "date": "2020-07-17",
-      "complete": false,
-      "id": 11
-    },
-    {
-      "userId": 1,
       "task": "435353",
       "date": "2020-07-23",
       "complete": true,
@@ -150,10 +140,24 @@
     },
     {
       "userId": 1,
-      "task": "whats up",
-      "date": "2020-07-01",
+      "task": "Adding a new task",
+      "date": "2020-07-31",
       "complete": false,
       "id": 14
+    },
+    {
+      "userId": 1,
+      "task": "Another new one",
+      "date": "2020-07-31",
+      "complete": false,
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "task": "And another",
+      "date": "2020-07-30",
+      "complete": false,
+      "id": 16
     }
   ],
   "friends": [
@@ -163,14 +167,19 @@
       "userId": 1
     },
     {
-      "id": 3,
-      "activeUserId": 1,
-      "userId": 3
+      "activeUserId": "1",
+      "userId": "1",
+      "id": 3
     },
     {
       "activeUserId": "1",
       "userId": "2",
       "id": 4
+    },
+    {
+      "activeUserId": "1",
+      "userId": "3",
+      "id": 5
     }
   ]
 }
