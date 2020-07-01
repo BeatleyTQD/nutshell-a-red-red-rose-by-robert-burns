@@ -21,9 +21,9 @@ const makeTaskCard = (obj)=>{
     let html = `
     <div class="t-card d-flex flex-row">
     <input class="checkbox" type="checkbox"  name=${obj.id}>
-    <h1>${obj.task}</h1><br>
-    <h3 id="due-date-task">Due Date: ${month}-${day}-${year}</h3>
-    <button type="button" name=${obj.id} id="task-delete-btn" class="btn-danger">Delete</button>
+    <h1 id="task-output">${obj.task}</h1><br>
+    <h3 id="due-date-task">Due Date:<br> ${month}-${day}-${year}</h3>
+    <button type="button" name=${obj.id} id="task-delete-btn" >Delete</button>
 </div>
     `
     return html;
