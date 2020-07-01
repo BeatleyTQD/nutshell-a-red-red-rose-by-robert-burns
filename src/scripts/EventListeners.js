@@ -3,7 +3,8 @@ import commentEventHandler from './Comments/commentEventHandlers.js'
 import taskEventHandler from "./Tasks/taskEventHandler.js";
 import friendEvents from './Friends/friendEventListener.js';
 import {deleteNewsHandler, saveNewsHandler} from './News/newsEventHandler.js';
-import {deleteEventHandler, saveEventHandler} from "./Events/eventsEventHandlers.js"
+import {deleteEventHandler, saveEventHandler} from "./Events/eventsEventHandlers.js";
+import searchUsers from './Users/userEvents.js'
 
 const EventListeners = {
     setStandard(){
@@ -94,6 +95,12 @@ const EventListeners = {
             btn.addEventListener('click', commentEventHandler.deleteComment);
         })
     },
+    addFriendCommentEvent(){
+        let addFriendBtn = document.querySelectorAll('#add-friend-comment')
+        .forEach(friend=>{
+            friend.addEventListener('click', commentEventHandler.addFriend)
+        })
+    },
     //events
 
     setEventDelete(){
@@ -115,9 +122,12 @@ const EventListeners = {
                 saveEventHandler(id)
             })
         })
-    }
+    },
     //users
-
+    searchUsersEvent(){
+       document.querySelector('#search-users')
+       .addEventListener('input', searchUsers)
+    }
     //friends page
 
 

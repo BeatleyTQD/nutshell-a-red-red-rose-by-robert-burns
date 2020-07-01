@@ -23,12 +23,12 @@
 
 #dashboard {
     text-align: center;
-    padding-left: 6.5vw;
+    padding-left: 6vw;
 }
 
 
 #welcome {
-    padding-left:4.5vw;
+    padding-left:4vw;
     text-align: center;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .nav-link {
-    margin-left: 1vw;
+    margin-left: 1.5vw;
     margin-top:1.5vw;
     color: cornsilk;
 }
@@ -132,6 +132,7 @@ input.checkbox {
     border-radius: 50%;
     box-shadow: 0 0 10px;
     margin: 1em;
+    
 
 }
 ul .dash-list{
@@ -230,8 +231,8 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
   }
   
-  #task-input{
-    width: 25.5%;
+  #task-input:focus{
+    width: 45%;
   }
 
 .firstPost {

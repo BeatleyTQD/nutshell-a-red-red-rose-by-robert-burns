@@ -7,7 +7,7 @@ export default function TaskCardGenerator(arr){
        if(!arr[i].complete && arr[i].userId == data.user)renderTaskCard(makeTaskCard(arr[i]));
       
    }
-   document.querySelector('.task-inputs').innerHTML += taskInputField();
+   document.querySelector('.task-cards').innerHTML += taskInputField();
    EventListener.setTaskEvents();
 }
 const renderTaskCard = (html) =>{
