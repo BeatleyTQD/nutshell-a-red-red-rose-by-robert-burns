@@ -6,9 +6,10 @@ import TaskCardGenerator from "./Tasks/TaskCardGenerator.js";
 import FriendTemplate from "./Friends/FriendTemplate.js";
 import API from './API.js'
 import APIFilter from "./APIFilter.js"
-
+// Local data array
 let data = {
     user: "",
+    userName: [],
     users:[],
     tasks:[],
     news:[],
@@ -16,9 +17,11 @@ let data = {
     comments:[],
     friends:[]
 }
+// sets local data array on refresh/ Checks in user is logged in
 async function start(){
-   data.user = window.sessionStorage.activeUser
+   data.user = parseInt(window.sessionStorage.activeUser)
    data.users = await API.getUsers();
+   data.userName = await API.getUserById(data.user);
    data.friends = await API.getFriends(data.user);
    data.tasks = await API.getTasks(window.sessionStorage.activeUser)
    data.news = await API.getNews(APIFilter())

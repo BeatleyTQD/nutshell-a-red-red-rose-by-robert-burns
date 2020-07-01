@@ -16,45 +16,40 @@ export default function TopSectionTemplate(){
     <section class="top-section container-fluid flex-container">
         <div class="top-box-sizing">
             <div class="flex-container">
-                <div class="sidebar-sticky text-center side-bar-custom">
-                    <ul class="nav flex-column">
-                      <li id="nav"  class="nav-item">
-                        <a name="dashboard" class="nav-link active " href="#">
-                          Dashboard 
-                        </a>
-                      </li>
-                      <li id="nav"  class="nav-item">
-                        <a name="news" class="nav-link " href="#">
-                          News
-                        </a>
-                      </li>
-                      <li id="nav" class="nav-item">
-                        <a name="events" class="nav-link " href="#">
-                          Events
-                        </a>
-                      </li>
-                      <li id="nav" class="nav-item">
-                        <a name="comments" class="nav-link " href="#">
-                          Chat Room
-                        </a>
-                      </li>
-                      <li id="nav"  class="nav-item">
-                        <a name="logout" class="nav-link " href="#">
-                          Logout
-                        </a>
-                      </li>
-                      
-                    </ul>
-        
-                  </div>
+            <div class="sidebar-sticky text-center side-bar-custom">
+            <ul class="nav flex-column">
+              <li id="nav"  class="nav-item">
+                <a name="news" class="nav-link " href="#">
+                  News
+                </a>
+              </li>
+              <li id="nav" class="nav-item">
+                <a name="events" class="nav-link " href="#">
+                  Events
+                </a>
+              </li>
+              <li id="nav" class="nav-item">
+                <a name="comments" class="nav-link " href="#">
+                  Chat Room
+                </a>
+              </li>
+              <li id="nav"  class="nav-item">
+                <a name="logout" class="nav-link " href="#">
+                  Logout
+                </a>
+              </li>
+              
+            </ul>
+
+          </div>
             </div>
           
             <div class="user-section col-4  flex-container"> 
-                <h1>Dashboard</h1>
-                <h2 ><strong>Welcome</strong> Anthony</h2>
+                <h1 id="dashboard">Dashboard</h1><br>
+                <h2 id="welcome"><strong>Welcome</strong> ${data.userName.username}</h2>
                 <div class="user-info d-flex  flex-container">
                    <div class="img">
-                    <img class="profile-img " src="https://img.favpng.com/11/7/14/money-stock-photography-maneki-neko-royalty-free-cat-bite-png-favpng-7atuHBjfXH4CBV38sTEW2DxDF.jpg">
+                    <img class="profile-img dashboard-img " src="https://img.favpng.com/11/7/14/money-stock-photography-maneki-neko-royalty-free-cat-bite-png-favpng-7atuHBjfXH4CBV38sTEW2DxDF.jpg">
                     </div>
                     <div class="stats text-right">
                    <div class="tasks text-right">
@@ -72,8 +67,10 @@ export default function TopSectionTemplate(){
             <div class="task-section col-6">
                 <div class="tasks-box">
                     <div class="task-cards">
-                       
+                     
                     </div>
+                    <div class="task-inputs">
+                     </div>
                 </div>
             </div>
         </div>

@@ -1,8 +1,10 @@
 //Module by Brandon W. Responsible for iterating through event data to generate HTML string with each entry as well as field for adding new event article.
+//Module API Integration,css for first post integration and sorting logic by Tyler H.
 import EventListeners from "../EventListeners.js"
 export default function EventsTemplate(events){
         let EventsTemplate = document.querySelector(".bottom-section")
         EventsTemplate.innerHTML = ""
+        EventsTemplate.innerHTML += eventsInputField()
         events.forEach(event => {
         EventsTemplate.innerHTML += eventsConverter(event)
     })
@@ -13,7 +15,7 @@ export default function EventsTemplate(events){
       
         
     }
-    EventsTemplate += eventsInputField()
+
     EventListeners.setEventDelete()
     EventListeners.setEventSave()
 }
@@ -85,7 +87,7 @@ const eventsInputField = () => {
       </div>
       <button type="button" id="save-event-btn"class="btn btn-secondary float-right">Submit</button>
   </section>
-  </section>`
-  document.querySelector(".bottom-section").innerHTML += html
+  </section><br><br><br><br><br><br>`
+  return html
 }
 

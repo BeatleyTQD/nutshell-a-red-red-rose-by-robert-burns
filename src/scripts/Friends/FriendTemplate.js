@@ -60,7 +60,7 @@ const friendSectionGenerator = (arr)=>{
     let html = `<div class="friend-entry">
     <div class="card text-center" style="width: 18rem;">
         <div class="card-body">
-          <img src="https://www.pngitem.com/pimgs/m/204-2040760_contact-starwars-user-default-yoda-comments-users-icon.png" class="card-title profile-img">
+          <img src="images/Friend Logo.png" height="80px" width="80px"class="card-title profile-img">
           <p class="card-text">${obj.username}</p>
           <button id="unfollow" name=${id} class="card-text">Un-Follow</button>
         </div>

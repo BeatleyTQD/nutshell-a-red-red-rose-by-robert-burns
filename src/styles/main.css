@@ -20,44 +20,76 @@
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
+
+#dashboard {
+    text-align: center;
+    padding-left: 6vw;
+}
+
+
+#welcome {
+    padding-left:4vw;
+    text-align: center;
+}
+
+.text-right {
+    padding-left: 4.5vw;
+}
 .top-section {
+    background-color: rgb(85, 55, 143);
     padding-left: 0px;
     height: 300px;
     flex-wrap: wrap;
     margin-bottom: 2em;
     margin-top:1em;
-    box-shadow: 0 0 2px;
+
     
-    justify-content: center;
 }
 .task-submit {
     background-color: rgb(85, 55, 143);
     color: cornsilk;
 }
+
 .side-bar-custom {
     height: 300px;
-    border: 1px solid black;
-    box-shadow: 0px 0px 4px;
+    color: cornsilk;
+ 
     background-color: rgb(85, 55, 143);
-    margin-right: 1em;
+ 
+}
+
+.nav-link {
+    margin-left: 1.5vw;
+    margin-top:1.5vw;
+    color: cornsilk;
 }
 .user-section {
     background-color: white;
     border:rgb(85, 55, 143) solid 1em;
     max-height: 300px;
-    justify-content: center;
+    margin-left: 2vw;
+    padding-left: 5vw;
     
 }
 .task-section {
     background-color: rgb(85, 55, 143);
     max-height: 300px;
+    width: 35%;
+    margin-left: 4vw;
 }
 .tasks-box {
     margin-top: 1em;
-    box-shadow: 0 0 10px;
     height: 265px;
     background-color: cornsilk;
     overflow: scroll;
+}
+#task-delete-btn{
+    background-color: rgb(82, 81, 83);
+    color: cornsilk;
+}
+#task-post-btn {
+    background-color: rgb(82, 81, 83);
+    color: cornsilk;
 }
 .tasks-box::-webkit-scrollbar {
     display: none;
@@ -69,10 +101,30 @@
     margin-bottom: 1px;
     background-color: white;
 }
+#task-output {
+    margin-left: 1vw;
+    margin-top: .7vw;
+    width: 20%;
+}
+#due-date-task {
+    margin-left: 4vw;
+    margin-right: 2vw;
+    padding-right: 9.4vw;
+    width: 42.5%
+  
+    
+}
+#task-delete-btn {
+    margin-left: 3vw;
+    margin-right: -3vw;
+    width: 9%;
+    
+}
 input.checkbox {
-    margin: .5em;
-    height: 50px;
-    width: 50px;
+    margin-left: 1vw;
+    margin-top: 1.6vw;
+    height: 30px;
+    width: 30px;
 }
 .profile-img {
     height: 100px;
@@ -80,6 +132,8 @@ input.checkbox {
     border-radius: 50%;
     box-shadow: 0 0 10px;
     margin: 1em;
+    
+
 }
 ul .dash-list{
     display: inline;
@@ -88,7 +142,7 @@ ul .dash-list{
     box-sizing: unset;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 4em;
+   
 }
 .flex-container{
     display: flex;
@@ -118,7 +172,9 @@ ul .dash-list{
 .friend-entry {
     margin: 0em 2em;    
 }
-
+#save-news-btn{
+    margin-bottom: 2vw;
+}
 .purple-button {
     background-color: rgb(85, 55, 143);
     border-color: rgb(85, 55, 143);
@@ -130,6 +186,22 @@ ul .dash-list{
     background-color: #3a2755
 }
 
+.card-title{
+    margin-top: 1vw;
+}
+.purple-button {
+    margin-bottom: 1vw;
+}
+.btn-outline-danger {
+    margin-top: 1vw;
+}
+.card-header{
+    background-color: rgb(166, 166, 167);
+}
+
+.card-footer{
+    background-color: rgb(166, 166, 167);
+}
 .gray-button {
     color: cornsilk;
     background-color: rgb(82, 81, 83);
@@ -159,8 +231,8 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
   }
   
-  #task-input{
-    width: 30%;
+  #task-input:focus{
+    width: 45%;
   }
 
 .firstPost {
@@ -169,9 +241,15 @@ input[type=text] {
     
 }
 
+.card{
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
 .card-body-friend {
     font-style: italic;
     background-color: cornsilk;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 .search-users-items{
     width: 200px;
