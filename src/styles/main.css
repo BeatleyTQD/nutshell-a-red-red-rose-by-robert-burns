@@ -23,12 +23,12 @@
 
 #dashboard {
     text-align: center;
-    padding-left: 6vw;
+    padding-left: 7.5vw;
 }
 
 
 #welcome {
-    padding-left:4vw;
+    padding-left:5vw;
     text-align: center;
 }
 
@@ -42,6 +42,7 @@
     flex-wrap: wrap;
     margin-bottom: 2em;
     margin-top:1em;
+    
 
     
 }
@@ -68,14 +69,17 @@
     border:rgb(85, 55, 143) solid 1em;
     max-height: 300px;
     margin-left: 2vw;
-    padding-left: 5vw;
+    padding-left: 3vw;
+    
     
 }
 .task-section {
     background-color: rgb(85, 55, 143);
     max-height: 300px;
     width: 35%;
-    margin-left: 4vw;
+    margin-left: 5vw;
+    padding-left: 4vw;
+    padding-right: -4vw;
 }
 .tasks-box {
     margin-top: 1em;
@@ -251,6 +255,7 @@ input[type=text] {
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
+
 .search-users-items{
     width: 200px;
     height: fit-content;
@@ -262,4 +267,18 @@ input[type=text] {
   }
 .hidden {
     display: none;
+}
+.show-friend-search {
+    background-color: rgb(85, 55, 143);
+    color: cornsilk
+}
+#add-friend-btn {
+    background-color: rgb(57, 57, 58);
+    color: cornsilk;
+    height: 20%
+}
+
+.bottom-section{
+    overflow: scroll;
+    max-height: 100vw;
 }

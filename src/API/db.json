@@ -41,6 +41,14 @@
       "location": "123",
       "description": "123",
       "id": 7
+    },
+    {
+      "userId": 2,
+      "name": "123",
+      "date": "2020-07-15",
+      "location": "123",
+      "description": "123",
+      "id": 8
     }
   ],
   "comments": [
@@ -53,21 +61,6 @@
     {
       "userId": 3,
       "comment": "I have a lot on my mind",
-      "id": 2
-    }
-  ],
-  "news": [
-    {
-      "userId": 1,
-      "title": "help me",
-      "time": 1593546537820,
-      "synopsis": "help me",
-      "url": "www.helpme.com",
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "comment": "Has anyone else ever thought it's weird we put the heaviest blanket on top and the lightest blanket on bottom? If I get hot at night why do I have to throw all of my blankets on the floor as opposed to them being underneath me from the beginning?",
       "id": 2
     }
   ],
@@ -149,6 +142,11 @@
       "activeUserId": 1,
       "userId": "1",
       "id": 9
+    },
+    {
+      "activeUserId": "1",
+      "userId": "3",
+      "id": 10
     }
   ]
 }

@@ -6,8 +6,9 @@ let friendObj;
 export default function CommentsTemplate(arr){
     let html = ``;
     friendObj = trackFriends(data.friends);
-    html = commentsGenerator(arr)
     html += commentInput();
+    html += commentsGenerator(arr)
+    
     renderComments(html);
     EventListeners.saveCommentEvent();
     EventListeners.editDeleteComment();
