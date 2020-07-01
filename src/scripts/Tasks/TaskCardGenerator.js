@@ -15,15 +15,20 @@ const renderTaskCard = (html) =>{
 
 }
 const makeTaskCard = (obj)=>{
+    let month = obj.date.split("-")[1]
+    let day = obj.date.split("-")[2]
+    let year = obj.date.split("-")[0]
     let html = `
     <div class="t-card d-flex flex-row">
     <input class="checkbox" type="checkbox"  name=${obj.id}>
-    <h1>${obj.task}</h1>
+    <h1>${obj.task}</h1><br>
+    <h3 id="due-date-task">Due Date: ${month}-${day}-${year}</h3>
     <button type="button" name=${obj.id} id="task-delete-btn" class="btn-danger">Delete</button>
 </div>
     `
     return html;
 }
 const taskInputField = () =>{
-    return `<input type="text" id="task-input"  value="Add Task" name="task"><button type="button" id="task-post-btn">ADD</button>`
+    return `<input type="text" id="task-input"  placeholder="New Task" value="" name="task"><br>
+    <input type="date" id="task-date-input"  placeholder="Due Date"  name="task"><br><button type="button" id="task-post-btn">ADD</button>`
 }
