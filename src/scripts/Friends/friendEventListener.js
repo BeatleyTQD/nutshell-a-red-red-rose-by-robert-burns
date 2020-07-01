@@ -6,7 +6,7 @@ const friendEvents = {
     var proceed = confirm("Are you Sure? This Could RUIN your friendship!");
     if (proceed) {
         let id = e.target.name;
-        API.unfollowFriend(id)
+        await API.unfollowFriend(id)
         FriendTemplate(await API.getFriends(data.user));
     } else {
         console.log('Negative, Keep following')

@@ -1,5 +1,6 @@
 import API from "../API.js"
 import CommentTemplate from "./CommentsTemplate.js"
+import FriendTemplate from "../Friends/FriendTemplate.js";
 import data from "../main.js";
 import commentFactory from "./commentFactory.js";
 import EventListeners from "../EventListeners.js"
@@ -45,9 +46,9 @@ const commentEventHandler = {
         e.preventDefault();
         newFriendRelationShip.userId = e.target.name;
         newFriendRelationShip.activeUserId = data.user;
-        API.addFriend(newFriendRelationShip);
-        let arr = await API.getComments();
-        CommentTemplate(arr);
+        await API.addFriend(newFriendRelationShip);
+        FriendTemplate( await API.getFriends(data.user))
+        CommentTemplate(await API.getComments());
         console.log("Adding Friend")
     },
     input(e){
