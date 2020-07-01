@@ -159,8 +159,8 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
   }
   
-  input[type=text]:focus {
-    width: 100%;
+  #task-input{
+    width: 30%;
   }
 
 .firstPost {
@@ -169,5 +169,8 @@ input[type=text] {
     
 }
 
-
+.card-body-friend {
+    font-style: italic;
+    background-color: cornsilk;
+}
 
