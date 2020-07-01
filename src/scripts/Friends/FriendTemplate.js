@@ -1,14 +1,15 @@
 import data from "../main.js";
 import EventListeners from '../EventListeners.js'
 export default function FriendTemplate(arr){
+  document.querySelector('.friend-list').innerHTML = ""
+  let friendHtml = friendSectionGenerator(arr);
+  document.querySelector('.friend-list').innerHTML = addButtonAndContainer();
+  document.querySelector('.friend-list').innerHTML += friendHtml; 
   document.querySelector('.show-friend-search').addEventListener('click', e=>{
     console.log('click')
     
     document.querySelector('.search-container').classList.toggle('hidden')
   })
-    document.querySelector('.friend-list').innerHTML = "";
-  let friendHtml = friendSectionGenerator(arr);
-  document.querySelector('.friend-list').innerHTML = friendHtml;
   EventListeners.unFollowFriend()
 }
 // const findFriendConnections = () =>{
@@ -66,4 +67,12 @@ const friendSectionGenerator = (arr)=>{
         </div>
   </div>`
   return html;
+  }
+  const addButtonAndContainer = () =>{
+    return `<button class="show-friend-search btn-primary btn" type="button">Add friend</button>
+    <div class="search-container hidden">
+        <input type="search" id="search-users">
+        <div id="search-user-items" class="search-users-items">
+
+        </div>  `
   }
