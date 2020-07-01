@@ -3,10 +3,21 @@
 import renderRegis from "../Registration/registrationRender.js"
 import API from "../API.js"
 import TopSectionTemplate from "../TopSectionTemplate.js"
-import CommentsTemplate from "../Comments/CommentsTemplate.js"
+import NewsTemplate from "../News/NewsTemplate.js"
 import data from "../main.js"
 import EventListeners from "../EventListeners.js"
 import TaskCardGenerator from "../Tasks/TaskCardGenerator.js"
+import FriendTemplate from "../Friends/FriendTemplate.js"
+import APIFilter from "../APIFilter.js"
+
+async function setFields(){
+   data.user = window.sessionStorage.activeUser,
+   data.tasks = await API.getTasks(window.sessionStorage.activeUser)
+   data.news = await API.getNews(APIFilter())
+   data.events = await API.getEvents(APIFilter())
+   data.comments = await API.getComments(window.sessionStorage.activeUser)
+   data.friends = await API.getFriends(data.user);
+}
 
 // Takes the user inputs on the registration page and converts them into an object for the Push call
 const registrationFactory = (email, username, password) => {
@@ -42,11 +53,17 @@ let loginEvents = {
                             window.sessionStorage.setItem("activeUser", user.id)
                             document.querySelector(".top-sec-container").innerHTML = ""
             
+                            setFields().then(() => {
+                                TopSectionTemplate();
+                                FriendTemplate(data.friends)
+                                TaskCardGenerator(data.tasks);
+                                NewsTemplate(data.news.sort((a,b)=>b.time-a.time));
+                                EventListeners.setStandard();
+
+                            })
+                                                
+                                                
                                             
-                            TopSectionTemplate()
-                            CommentsTemplate()
-                            EventListeners.setStandard()
-                            TaskCardGenerator(data.tasks);
         
                         }
                     }
@@ -75,15 +92,20 @@ let loginEvents = {
                         passwordCheck = true
                         window.sessionStorage.setItem("activeUser", user.id)
                         document.querySelector(".top-sec-container").innerHTML =""
-            
-                                          
-                        TopSectionTemplate()
-                        CommentsTemplate()
-                        EventListeners.setStandard()
-                        TaskCardGenerator(data.tasks);
+                        setFields().then(() => {
+                            TopSectionTemplate();
+                            FriendTemplate(data.friends)
+                            TaskCardGenerator(data.tasks);
+                            NewsTemplate(data.news.sort((a,b)=>b.time-a.time));
+                            EventListeners.setStandard();
+
+                        })
+                                                
+                                           
+                            
     
-                    }
-                }
+                    
+                }}
             }
             if(usernameCheck === true) {
                 if(passwordCheck === false) {
@@ -92,8 +114,9 @@ let loginEvents = {
             }else{
                 window.alert("Incorrect Username/Email")
             }
-        })
         
+        
+        })
     },
     // sets event listener to the registration button that loads the registration page to the dom
     loadRegistration(){
@@ -136,13 +159,16 @@ let loginEvents = {
                                            if(user.username === username) {
                                             window.sessionStorage.setItem("activeUser", user.id )
                                             document.querySelector(".top-sec-container").innerHTML = ""
-            
-                                           
-            
-                                            TopSectionTemplate()
-                                            CommentsTemplate()
-                                            EventListeners.setStandard()
-                                            TaskCardGenerator(data.tasks);
+                                            setFields().then(() => {
+                                                TopSectionTemplate();
+                                                FriendTemplate(data.friends)
+                                                TaskCardGenerator(data.tasks);
+                                                NewsTemplate(data.news.sort((a,b)=>b.time-a.time));
+                                                EventListeners.setStandard();
+                
+                                            })
+                                                
+                                            
                                            }
                                        }
                                    })
@@ -199,10 +225,17 @@ let loginEvents = {
                                            if(user.username === username) {
                                             window.sessionStorage.setItem("activeUser", user.id )
                                             document.querySelector(".top-sec-container").innerHTML = ""
-                                            TopSectionTemplate()
-                                            CommentsTemplate()
-                                            EventListeners.setStandard()
-                                            TaskCardGenerator(data.tasks);
+                                            setFields().then(() => {
+                                                TopSectionTemplate();
+                                                FriendTemplate(data.friends)
+                                                TaskCardGenerator(data.tasks);
+                                                NewsTemplate(data.news.sort((a,b)=>b.time-a.time));
+                                                EventListeners.setStandard();
+                
+                                            })
+                                                
+                                           
+                                           
                                            }
                                        }
                                    })
