@@ -42,7 +42,7 @@ const commentEventHandler = {
             }
         ))
     },
-    async addFriend(e){
+   async addFriend(e){
         e.preventDefault();
         newFriendRelationShip.userId = e.target.name;
         newFriendRelationShip.activeUserId = data.user;
