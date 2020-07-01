@@ -173,4 +173,11 @@ input[type=text] {
     font-style: italic;
     background-color: cornsilk;
 }
-
+.search-users-items{
+    width: 200px;
+    height: 25px;
+    overflow: scroll;
+}
+.search-users-items::-webkit-scrollbar {
+    display: none;
+  }

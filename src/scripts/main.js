@@ -32,6 +32,7 @@ async function start(){
         TaskCardGenerator(data.tasks);
         NewsTemplate(data.news.sort((a,b)=>b.time-a.time));
         EventListeners.setStandard();
+        EventListeners.searchUsersEvent();
     } else{
         renderLogin()
     }

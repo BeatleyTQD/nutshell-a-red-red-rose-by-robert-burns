@@ -1,5 +1,10 @@
 import API from "../API.js"
 import CommentTemplate from "./CommentsTemplate.js"
+import data from "../main.js";
+let newFriendRelationShip = {
+    "activeUserId": undefined,
+    "userId": undefined
+  }
 const commentEventHandler = {
     async deleteComment(e){
         e.preventDefault();
@@ -11,6 +16,13 @@ const commentEventHandler = {
     editComment(e){
         e.preventDefault();
         console.log('Editing Comment')
+    },
+    addFriend(e){
+        e.preventDefault();
+        newFriendRelationShip.userId = e.target.name;
+        newFriendRelationShip.activeUserId = data.user;
+        API.addFriend(newFriendRelationShip);
+        console.log("Adding Friend")
     }
 }
 export default commentEventHandler;
