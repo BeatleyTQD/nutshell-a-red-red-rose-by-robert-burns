@@ -4,10 +4,11 @@ import EventListeners from "../EventListeners.js"
 export default function NewsTemplate(news){
         let NewsTemplate = document.querySelector(".bottom-section")
         NewsTemplate.innerHTML = ""
+        NewsTemplate.innerHTML += newsInputField(news)
         news.forEach(newsObj => {
             NewsTemplate.innerHTML += newsConverter(newsObj)
     })
-    NewsTemplate += newsInputField(news)
+    
     EventListeners.setNewsDelete()
     EventListeners.setNewsSave()
 }
@@ -70,7 +71,7 @@ const newsInputField = (newsItem) => {
                 </div>
                 <button type="button" id="save-news-btn" class="btn gray-button float-right">Submit</button>
             </section>
-            </section>
+            </section><br><br><br><br><br><br>
         `
-        document.querySelector(".bottom-section").innerHTML += html
+        return html
 }

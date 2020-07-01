@@ -3,6 +3,7 @@ import EventListeners from "../EventListeners.js"
 export default function EventsTemplate(events){
         let EventsTemplate = document.querySelector(".bottom-section")
         EventsTemplate.innerHTML = ""
+        EventsTemplate.innerHTML += eventsInputField()
         events.forEach(event => {
         EventsTemplate.innerHTML += eventsConverter(event)
     })
@@ -13,7 +14,7 @@ export default function EventsTemplate(events){
       
         
     }
-    EventsTemplate += eventsInputField()
+
     EventListeners.setEventDelete()
     EventListeners.setEventSave()
 }
@@ -85,7 +86,7 @@ const eventsInputField = () => {
       </div>
       <button type="button" id="save-event-btn"class="btn btn-secondary float-right">Submit</button>
   </section>
-  </section>`
-  document.querySelector(".bottom-section").innerHTML += html
+  </section><br><br><br><br><br><br>`
+  return html
 }
 

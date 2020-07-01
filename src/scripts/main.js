@@ -9,6 +9,7 @@ import APIFilter from "./APIFilter.js"
 
 let data = {
     user: "",
+    userName: [],
     users:[],
     tasks:[],
     news:[],
@@ -17,8 +18,9 @@ let data = {
     friends:[]
 }
 async function start(){
-   data.user = window.sessionStorage.activeUser
+   data.user = parseInt(window.sessionStorage.activeUser)
    data.users = await API.getUsers();
+   data.userName = await API.getUserById(data.user);
    data.friends = await API.getFriends(data.user);
    data.tasks = await API.getTasks(window.sessionStorage.activeUser)
    data.news = await API.getNews(APIFilter())

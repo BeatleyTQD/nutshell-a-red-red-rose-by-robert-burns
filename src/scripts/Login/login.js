@@ -12,11 +12,13 @@ import APIFilter from "../APIFilter.js"
 
 async function setFields(){
    data.user = window.sessionStorage.activeUser,
+   data.friends = await API.getFriends(data.user);
+   data.userName = await API.getUserById(data.user);
    data.tasks = await API.getTasks(window.sessionStorage.activeUser)
    data.news = await API.getNews(APIFilter())
    data.events = await API.getEvents(APIFilter())
    data.comments = await API.getComments(window.sessionStorage.activeUser)
-   data.friends = await API.getFriends(data.user);
+   
 }
 
 // Takes the user inputs on the registration page and converts them into an object for the Push call
