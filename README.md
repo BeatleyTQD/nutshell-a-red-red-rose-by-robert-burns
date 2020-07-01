@@ -1,3 +1,54 @@
+# Nutshell, a Red Red Rose Production.
+
+Nutshell is a dashboard application for people to use to organize their daily tasks, events, news article, friends, and chat messages. 
+
+## Installation
+
+All needed files are included in the project. The user will need to locally host both the source files as well as the database via json-server on port 8088.
+
+## Usage
+User will be prompted to login or create a new account.
+After successful login the user will come to the main landing page where they are able to add and delete tasks, news articles, and life events. Users are also able to search for friends, see their friends' events and articles, and chat with them on a forum style message board. Database will update in real time via the user's manipulation.
+
+## Authors
+Tyler Hilliard, Anthony Johnson, Brandon Wheatley
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Nutshell: The Information Dashboard
 
 ## Setup: Follow these steps exactly

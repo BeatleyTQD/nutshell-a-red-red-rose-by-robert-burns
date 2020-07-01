@@ -1,3 +1,4 @@
+//Module by Anthony J. Tyler H. and Brandon W.
 import data from "./main.js"
 
 const url = 'http://localhost:8088/'
@@ -191,11 +192,13 @@ const API = {
     },
 
     // Comments //
+    //Grabs comment object from database.
     getComments(){
         return fetch(`${url}comments`)
         .then(res=>res.json())
         .then(res=>res)
     },
+    //Deletes user selected comments from database.
     deleteComments(id){
         return fetch(`${url}comments/${id}`, {
             method:"DELETE",
@@ -204,6 +207,7 @@ const API = {
               }
         })
     },
+    //Saves user selected comments to database.
     saveComments(data){
         return fetch(`${url}comments`, {
             method:'POST',
@@ -215,6 +219,7 @@ const API = {
         .then(GlobalSuccess)
         .catch(GlobalError)
     },
+    //Updates user edited comments to database.
     updateComments(data, id){
         return fetch(`${url}comments/${id}`, {
             method: "PUT", 

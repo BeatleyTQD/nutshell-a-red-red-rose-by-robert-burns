@@ -111,6 +111,7 @@ const EventListeners = {
             btn.addEventListener('click', commentEventHandler.deleteComment);
         })
     },
+    //Function to save new comment based on user's input.
     saveCommentEvent(){
         let saveButtons = document.querySelectorAll("#save-comment-btn");
         saveButtons.forEach(btn =>{  

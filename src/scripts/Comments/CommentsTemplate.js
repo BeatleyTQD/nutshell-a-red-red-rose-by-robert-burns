@@ -1,3 +1,4 @@
+//Module done by Brandon W and Anthony J
 import EventListeners from '../EventListeners.js';
 import data from '../main.js';
 
@@ -31,6 +32,7 @@ const commentsGenerator =(arr)=>{
   }
   return html;
 }
+//Takes comment data from database and splices it in where appropriate into the HTML template
 const commentCard= (obj)=>{
   let html = `
   <div class="card text-center">
@@ -47,6 +49,7 @@ const commentCard= (obj)=>{
 `
 return html;
 }
+//Text input fields for new comments
 const commentInput = () =>{
   return ` <section class="enter-chat-message">
   <div class="input-group">
