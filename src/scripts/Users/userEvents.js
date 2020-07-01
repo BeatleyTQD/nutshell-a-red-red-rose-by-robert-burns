@@ -6,7 +6,7 @@ let friendObj;
 async function searchUsers(e){
     
    let res =  await API.searchUsers(e.target.value)
-    trackFriends(data.friends);
+    trackFriends(await API.getFriends(data.user));
     document.querySelector(".search-users-items").innerHTML= ""
     document.querySelector(".search-users-items").innerHTML= createSearchInput(res)
     EventListener.addFriendUserEvent();
@@ -21,6 +21,7 @@ const createSearchInput = (arr) =>{
 }
 
 const searchItems = (obj) =>{
+    console.log('search', obj)
     return `
     <p>${obj.username}</p>
     ${friendObj[obj.id] ? "":`<button type="button" id="add-friend-btn" name=${obj.id}>add friend</button>` }
