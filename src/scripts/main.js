@@ -36,6 +36,7 @@ async function start(){
         NewsTemplate(data.news.sort((a,b)=>b.time-a.time));
         EventListeners.setStandard();
         EventListeners.searchUsersEvent();
+        console.log(APIFilter())
     } else{
         renderLogin()
     }
