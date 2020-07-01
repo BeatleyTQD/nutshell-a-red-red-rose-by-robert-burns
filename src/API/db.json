@@ -77,7 +77,7 @@
     {
       "id": 1,
       "username": "Tony",
-      "userId": 7,
+      "userId": 4,
       "message": "What's up?"
     }
   ],
@@ -118,13 +118,6 @@
     },
     {
       "userId": 1,
-      "task": "124535",
-      "date": "2020-07-17",
-      "complete": false,
-      "id": 11
-    },
-    {
-      "userId": 1,
       "task": "435353",
       "date": "2020-07-23",
       "complete": true,
@@ -136,6 +129,27 @@
       "date": "2020-07-24",
       "complete": true,
       "id": 13
+    },
+    {
+      "userId": 1,
+      "task": "Adding a new task",
+      "date": "2020-07-31",
+      "complete": false,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "task": "Another new one",
+      "date": "2020-07-31",
+      "complete": false,
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "task": "And another",
+      "date": "2020-07-30",
+      "complete": false,
+      "id": 16
     }
   ],
   "friends": [
@@ -145,14 +159,19 @@
       "userId": 1
     },
     {
-      "id": 3,
-      "activeUserId": 1,
-      "userId": 3
+      "activeUserId": "1",
+      "userId": "1",
+      "id": 3
     },
     {
       "activeUserId": "1",
       "userId": "2",
       "id": 4
+    },
+    {
+      "activeUserId": "1",
+      "userId": "3",
+      "id": 5
     }
   ]
 }

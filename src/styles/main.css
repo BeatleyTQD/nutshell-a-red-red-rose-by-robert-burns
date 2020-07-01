@@ -175,9 +175,13 @@ input[type=text] {
 }
 .search-users-items{
     width: 200px;
-    height: 25px;
+    height: fit-content;
+    max-height: 200px;
     overflow: scroll;
 }
 .search-users-items::-webkit-scrollbar {
     display: none;
   }
+.hidden {
+    display: none;
+}

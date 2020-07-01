@@ -127,6 +127,12 @@ const EventListeners = {
     searchUsersEvent(){
        document.querySelector('#search-users')
        .addEventListener('input', searchUsers)
+    },
+    addFriendUserEvent(){
+        document.querySelectorAll('#add-friend-btn')
+        .forEach(btn=>{
+            btn.addEventListener('click', commentEventHandler.addFriend)
+        })
     }
     //friends page
 
