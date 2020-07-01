@@ -77,16 +77,15 @@
   ],
   "comments": [
     {
-      "comment": "test12",
-      "username": "Tony",
-      "userId": "1",
-      "id": 1
-    },
-    {
       "id": 1,
       "username": "Tony",
       "userId": 4,
       "message": "What's up?"
+    },
+    {
+      "userId": 1,
+      "comment": "gdgffdg",
+      "id": 2
     }
   ],
   "news": [
