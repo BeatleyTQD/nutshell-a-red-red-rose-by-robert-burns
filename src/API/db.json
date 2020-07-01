@@ -27,14 +27,6 @@
   ],
   "events": [
     {
-      "userId": 1,
-      "name": "123",
-      "date": "2020-06-11",
-      "location": "123",
-      "description": "123",
-      "id": 4
-    },
-    {
       "userId": 3,
       "name": "123",
       "date": "2020-06-12",
@@ -43,37 +35,15 @@
       "id": 7
     },
     {
-      "userId": 2,
-      "name": "2q2312",
-      "date": "2020-07-23",
-      "location": "124",
-      "description": "124",
-      "id": 8
-    },
-    {
       "userId": 3,
       "name": "123",
       "date": "2020-06-12",
       "location": "123",
       "description": "123",
       "id": 7
-    },
-    {
-      "userId": 1,
-      "name": "yo",
-      "date": "2020-12-31",
-      "location": "yo",
-      "description": "yo",
-      "id": 8
     }
   ],
   "comments": [
-    {
-      "comment": "test12",
-      "username": "Tony",
-      "userId": "1",
-      "id": 1
-    },
     {
       "id": 1,
       "username": "Tony",
@@ -96,20 +66,19 @@
       "id": 1
     },
     {
-      "userId": 2,
-      "title": "google",
-      "time": 1593546554354,
-      "synopsis": "google",
-      "url": "www.google.com",
+      "userId": 1,
+      "comment": "Has anyone else ever thought it's weird we put the heaviest blanket on top and the lightest blanket on bottom? If I get hot at night why do I have to throw all of my blankets on the floor as opposed to them being underneath me from the beginning?",
       "id": 2
-    },
+    }
+  ],
+  "news": [
     {
       "userId": 1,
-      "title": "123",
-      "time": 1593614912580,
-      "synopsis": "123",
-      "url": "123",
-      "id": 5
+      "title": "Egypt's Curse of Pharaohs exposed: How DNA test on 'screaming mummy' found shocking truth.",
+      "time": 1593636220825,
+      "synopsis": "EGYPT's Curse of the Pharaohs has been blamed for numerous bizarre deaths ever since Howard Carter discovered Tutankhamun's tomb in 1922, but scientists uncovered an even more shocking truth after performing a DNA test on a \"screaming mummy\".",
+      "url": "https://www.express.co.uk/news/weird/1303662/egypt-curse-pharaohs-tutankhamun-screaming-mummy-dna-test-ramses-murder-valley-kings-spt",
+      "id": 10
     },
     {
       "userId": 1,
@@ -146,47 +115,18 @@
   ],
   "tasks": [
     {
-      "id": 3,
       "userId": 1,
-      "task": "Park",
-      "date": "06/29/2020",
-      "completed": false,
-      "complete": true
-    },
-    {
-      "userId": 1,
-      "task": "435353",
-      "date": "2020-07-23",
-      "complete": true,
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "task": "151321",
-      "date": "2020-07-24",
-      "complete": true,
-      "id": 13
-    },
-    {
-      "userId": 1,
-      "task": "Adding a new task",
-      "date": "2020-07-31",
+      "task": "Present our group project",
+      "date": "2020-07-02",
       "complete": false,
-      "id": 14
+      "id": 18
     },
     {
       "userId": 1,
-      "task": "Another new one",
-      "date": "2020-07-31",
+      "task": "Jog a 5k",
+      "date": "2020-07-06",
       "complete": false,
-      "id": 15
-    },
-    {
-      "userId": 1,
-      "task": "And another",
-      "date": "2020-07-30",
-      "complete": false,
-      "id": 16
+      "id": 19
     }
   ],
   "friends": [

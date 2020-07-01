@@ -32,6 +32,7 @@ const commentEventHandler = {
             CommentTemplate(response)
         }))
     },
+    //Stores user inputted text, generates a new data object, retrieves the updated database, and renders it to the DOM.
     saveCommentHandler(e){
         e.preventDefault()
         let commentTextInput = document.querySelector("#comment-text-input").value

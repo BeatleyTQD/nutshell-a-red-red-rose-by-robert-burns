@@ -1,4 +1,4 @@
-//Module by Brandon W. Responsible for iterating through news data to generate HTML string with each entry as well as field for adding new news article.
+//Module by Brandon W. and Tyler H. Responsible for iterating through news data to generate HTML string with each entry as well as field for adding new news article.
 import EventListeners from "../EventListeners.js"
 
 export default function NewsTemplate(news){
@@ -45,7 +45,8 @@ const newsConverter = (newsItem) => {
     }
     
 }
-    
+
+//Field for user submitted data for a new News article object.
 const newsInputField = (newsItem) => {
     const html =
             `<!-- SECTION FOR CREATING NEW ARTICLE -->

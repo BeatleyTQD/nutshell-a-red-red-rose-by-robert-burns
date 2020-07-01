@@ -1,3 +1,4 @@
+//Module by Brandon W. Used to pull data from user edited comments and store them as a newly updated object.
 import data from "../main.js";
 
 const updateCommentFields = (commentEntry) => {
