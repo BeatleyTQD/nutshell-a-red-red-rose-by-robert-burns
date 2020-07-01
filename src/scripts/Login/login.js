@@ -18,6 +18,7 @@ async function setFields(){
    data.tasks = await API.getTasks(window.sessionStorage.activeUser)
    data.news = await API.getNews(APIFilter())
    data.events = await API.getEvents(APIFilter())
+   console.log(APIFilter())
    data.comments = await API.getComments(window.sessionStorage.activeUser)
    
 }

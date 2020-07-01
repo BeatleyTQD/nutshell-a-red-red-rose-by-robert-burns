@@ -23,11 +23,35 @@
       "username": "dan4",
       "password": "123",
       "id": 4
+    },
+    {
+      "email": "meme3@meme.com",
+      "username": "TestUser5",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "email": "me5@meme.com",
+      "username": "TestUser6",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "email": "me6@meme.com",
+      "username": "TestUser7",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "email": "me8@meme.com",
+      "username": "TestUser8",
+      "password": "123",
+      "id": 8
     }
   ],
   "events": [
     {
-      "userId": 3,
+      "userId": 2,
       "name": "123",
       "date": "2020-06-12",
       "location": "123",
@@ -35,7 +59,7 @@
       "id": 7
     },
     {
-      "userId": 3,
+      "userId": 1,
       "name": "123",
       "date": "2020-06-12",
       "location": "123",
@@ -62,6 +86,11 @@
       "userId": 3,
       "comment": "I have a lot on my mind",
       "id": 2
+    },
+    {
+      "comment": "1234",
+      "userId": 1,
+      "id": 3
     }
   ],
   "news": [
