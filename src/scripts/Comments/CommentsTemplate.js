@@ -35,12 +35,17 @@ const commentsGenerator =(arr)=>{
 }
 //Takes comment data from database and splices it in where appropriate into the HTML template
 const commentCard= (obj)=>{
+  let commentUser = ""
+  for(let person of data.users)
+  if(person.id == obj.userId){
+    commentUser = person.username
+  }
   let html = `
   <div class="card text-center">
   <div class="card-header"></div>
   ${ obj.userId != window.sessionStorage.activeUser && !friendObj[obj.userId] ?`<button type="button" id="add-friend-comment" name=${obj.userId}>Add Friend</button>` : "" }
   <div class="card-body">
-    <h5 class="card-title comment-title">${obj.userId}</h5>
+    <h5 class="card-title comment-title">${commentUser}</h5>
     <p id="commentText-${obj.id}" class="card-text">${obj.comment}</p>
   </div>
   ${obj.userId == window.sessionStorage.activeUser ? `<button type="button" name=${obj.id} id="edit-comment-btn">Edit</button><button type="button" name=${obj.id} id="delete-comment-btn">Delete</button>` : ""}
